@@ -5,7 +5,7 @@ program:
   name: "SNU Connectome Fellows Program"
   version: "1.0.0"
   year: 2025
-  max_fellows: 10
+  max_fellows: 1  # 초기 1년은 1명으로 시작 (펀드 확보 후 확대 예정)
   
 # Fellow Support Settings
 fellow_support:
@@ -15,13 +15,14 @@ fellow_support:
     currency: "KRW"
   
   ai_budget:
-    monthly_usd: 500
+    monthly_krw: 300000  # 한명당 월 30만원
+    monthly_usd: 225  # 약 $225 (환율 1,330 기준)
     breakdown:
-      anthropic: 150
-      openai: 100
-      google: 100
-      deepseek: 50
-      tools: 100
+      anthropic: 90
+      openai: 60
+      google: 40
+      deepseek: 20
+      tools: 15
   
   conference_support:
     annual_count: 1
@@ -129,13 +130,31 @@ research:
       repo: "https://github.com/xxx/brain-jepa"
 
 # Budget Configuration (KRW)
+# Updated with actual DGX Spark pricing: $3,999 ≈ 6,000,000 KRW per unit
+# 학생 1명 기준, AI 비용 월 30만원, 멘토 사례비 및 운영비는 항목 유지하되 총 예산에서 제외
+# 재원: 연구비 펀드 33.2M + 간접비 펀드 20M = 총 53.2M
 budget:
-  annual_total: 424600000
+  annual_total: 53200000
   breakdown:
-    student_support: 205000000
-    mentor_fees: 39000000
-    equipment: 125000000
-    operations: 55600000
+    student_support: 38600000  # 1명 기준
+    mentor_fees: 0  # 항목 유지, 펀드 확보 후 지급 예정
+    equipment: 14600000  # DGX Spark 1대: 6M + AI Agent 구독비: 3.6M + 소프트웨어: 5M
+    operations: 0  # 항목 유지, 펀드 확보 후 지급 예정
+  
+  # 재원 구조
+  funding:
+    research_grants: 33200000  # 연구비 펀드 (기기구입, 해외 여행 등)
+    indirect_costs: 20000000  # 간접비 펀드 (학생 지원 등)
+  
+  # 연구비 펀드 상세
+  research_grants_breakdown:
+    equipment: 6000000  # DGX Spark (현재 연구비)
+    overseas_travel: 10000000  # 해외 여행 (현재 연구비)
+    other_research: 17200000  # 기타 연구 활동
+    
+  # 간접비 펀드 상세
+  indirect_costs_breakdown:
+    student_stipend: 20000000  # 월 장학금
 
 # Database Configuration
 database:

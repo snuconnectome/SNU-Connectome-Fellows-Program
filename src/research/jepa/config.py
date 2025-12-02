@@ -58,3 +58,4 @@ class BrainJEPAConfig:
     # Checkpointing
     checkpoint_dir: str = "checkpoints/brain_jepa"
 
+

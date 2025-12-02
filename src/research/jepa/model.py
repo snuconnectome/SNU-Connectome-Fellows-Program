@@ -512,3 +512,4 @@ class BrainJEPA(nn.Module):
         else:
             return encoded
 
+

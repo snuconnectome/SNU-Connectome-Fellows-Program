@@ -297,3 +297,4 @@ class FellowManager:
             counts[f.cohort] = counts.get(f.cohort, 0) + 1
         return counts
 
+

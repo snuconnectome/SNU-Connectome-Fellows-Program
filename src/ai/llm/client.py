@@ -534,3 +534,4 @@ class MultiModelClient:
         """Check if still within budget."""
         return self.usage.cost_usd < self.monthly_budget_usd
 
+
