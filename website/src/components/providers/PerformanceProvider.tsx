@@ -9,7 +9,7 @@
 'use client';
 
 import React, { useEffect, createContext, useContext, useState } from 'react';
-import { getCLS, getFCP, getFID, getLCP, getTTFB, Metric } from 'web-vitals';
+import { onCLS, onFCP, onINP, onLCP, onTTFB, Metric } from 'web-vitals';
 import {
   trackWebVitals,
   PERFORMANCE_BUDGET,
@@ -94,11 +94,11 @@ export function PerformanceProvider({ children }: PerformanceProviderProps) {
     };
 
     // Collect all Web Vitals
-    getCLS(handleMetric);
-    getFCP(handleMetric);
-    getFID(handleMetric);
-    getLCP(handleMetric);
-    getTTFB(handleMetric);
+    onCLS(handleMetric);
+    onFCP(handleMetric);
+    onINP(handleMetric);
+    onLCP(handleMetric);
+    onTTFB(handleMetric);
 
     // Monitor memory usage
     const updateMemoryUsage = () => {

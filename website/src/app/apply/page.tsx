@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { ApplicationForm } from '@/components/forms/ApplicationForm';
+import { ApplicationFormSimple as ApplicationForm } from '@/components/forms/ApplicationFormSimple';
 import { ApplicationGuide } from '@/components/sections/ApplicationGuide';
 
 export const metadata: Metadata = {

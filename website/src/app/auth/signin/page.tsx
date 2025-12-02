@@ -45,11 +45,11 @@ export default function SignInPage() {
         if (session?.user?.role === 'admin') {
           router.push('/admin');
         } else if (session?.user?.role === 'mentor') {
-          router.push('/mentor');
+          router.push('/mentors');
         } else if (session?.user?.role === 'fellow') {
-          router.push('/fellow');
+          router.push('/research');
         } else {
-          router.push(callbackUrl);
+          router.push('/');
         }
       }
     } catch (error) {

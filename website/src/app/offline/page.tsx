@@ -120,9 +120,4 @@ export default function OfflinePage() {
   );
 }
 
-// Metadata for the offline page
-export const metadata = {
-  title: 'Offline - SNU Connectome Fellows Program',
-  description: 'You are currently offline. Please check your internet connection.',
-  robots: 'noindex, nofollow',
-};
+// Note: Metadata is handled in layout.tsx for client components

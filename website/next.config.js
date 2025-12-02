@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
-    typedRoutes: true,
+    typedRoutes: false,
     optimizeCss: true,
     optimizeServerReact: true,
   },
@@ -72,24 +71,7 @@ const nextConfig = {
     return config;
   },
 
-  // PWA Configuration
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
-    runtimeCaching: [
-      {
-        urlPattern: /^https?.*/,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'offlineCache',
-          expiration: {
-            maxEntries: 200,
-          },
-        },
-      },
-    ],
-  },
+  // PWA Configuration removed - causes Next.js warnings
   async rewrites() {
     return [
       // Proxy Python API calls to FastAPI backend

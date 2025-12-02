@@ -1,0 +1,31 @@
+# Vercel Environment Variables for SNU Connectome Fellows Program
+# ==============================================================
+# These environment variables will be set in Vercel dashboard
+
+# Basic Configuration
+NODE_ENV=production
+NEXT_PUBLIC_APP_ENV=production
+NEXT_PUBLIC_SITE_URL=https://snu-connectome-fellows.vercel.app
+
+# Authentication (NextAuth.js) - REQUIRED FOR VERCEL
+NEXTAUTH_URL=https://snu-connectome-fellows.vercel.app
+NEXTAUTH_SECRET=connectome-fellows-super-secret-random-key-minimum-32-characters-for-nextauth-security
+
+# Database (Supabase recommended for Vercel deployment)
+# Sign up at https://supabase.com and create a project
+DATABASE_URL=postgresql://postgres:[YOUR-PASSWORD]@db.[PROJECT-REF].supabase.co:5432/postgres
+
+# OAuth Providers
+# Get from https://console.cloud.google.com
+GOOGLE_CLIENT_ID=[YOUR-GOOGLE-CLIENT-ID].apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=[YOUR-GOOGLE-CLIENT-SECRET]
+
+# Optional: File Storage (Vercel Blob recommended)
+# Automatically available in Vercel projects
+BLOB_READ_WRITE_TOKEN=[AUTO-GENERATED-BY-VERCEL]
+
+# Optional: Analytics
+GOOGLE_ANALYTICS_ID=G-[YOUR-GA-ID]
+
+# Optional: Monitoring
+SENTRY_DSN=https://[YOUR-SENTRY-KEY]@sentry.io/[PROJECT-ID]

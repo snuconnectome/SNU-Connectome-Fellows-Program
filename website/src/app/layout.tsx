@@ -178,43 +178,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               className="sr-only"
             />
 
-            {/* Global focus indicator for high contrast mode */}
-            <style jsx global>{`
-              @media (prefers-contrast: high) {
-                :focus {
-                  outline: 3px solid currentColor !important;
-                  outline-offset: 2px !important;
-                }
-              }
-
-              @media (prefers-reduced-motion: reduce) {
-                *, *::before, *::after {
-                  animation-duration: 0.01ms !important;
-                  animation-iteration-count: 1 !important;
-                  transition-duration: 0.01ms !important;
-                  scroll-behavior: auto !important;
-                }
-              }
-
-              /* Ensure focus is visible in all cases */
-              :focus-visible {
-                outline: 2px solid #667eea;
-                outline-offset: 2px;
-              }
-
-              /* High contrast mode adjustments */
-              @media (prefers-contrast: high) {
-                .high-contrast {
-                  filter: contrast(150%);
-                }
-              }
-
-              /* Large text support */
-              .large-text {
-                font-size: 120%;
-                line-height: 1.6;
-              }
-            `}</style>
+            {/* Global focus and accessibility styles moved to globals.css */}
           </div>
         </Providers>
 
