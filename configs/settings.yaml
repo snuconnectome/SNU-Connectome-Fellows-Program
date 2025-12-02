@@ -1,0 +1,148 @@
+# SNU Connectome Fellows Program Configuration
+# =============================================
+
+program:
+  name: "SNU Connectome Fellows Program"
+  version: "1.0.0"
+  year: 2025
+  max_fellows: 10
+  
+# Fellow Support Settings
+fellow_support:
+  monthly_stipend:
+    min: 1500000  # KRW
+    max: 2000000  # KRW
+    currency: "KRW"
+  
+  ai_budget:
+    monthly_usd: 500
+    breakdown:
+      anthropic: 150
+      openai: 100
+      google: 100
+      deepseek: 50
+      tools: 100
+  
+  conference_support:
+    annual_count: 1
+    max_amount_krw: 5000000
+    
+  overseas_visit:
+    annual_weeks: 4
+    max_amount_krw: 5000000
+
+# Mentor Configuration
+mentors:
+  primary:
+    - name: "유신재 교수"
+      affiliation: "Brookhaven National Laboratory"
+      email: "yoosinjae@bnl.gov"
+      expertise: ["brain-imaging", "neuroscience", "biomarkers"]
+      annual_fee_usd: 8000
+      
+    - name: "박기태 박사"
+      affiliation: "Brookhaven National Laboratory"
+      email: "kitaepark@bnl.gov"
+      expertise: ["computational-neuroscience", "ml-neuroimaging", "bci"]
+      annual_fee_usd: 6000
+      
+    - name: "Uri Hasson"
+      affiliation: "Princeton University"
+      email: "hasson@princeton.edu"
+      expertise: ["language-brain", "neural-communication", "nlp-neuro"]
+      annual_fee_usd: 10000
+      
+  extended:
+    - name: "Tomaso Poggio"
+      affiliation: "MIT"
+      expertise: ["computational-theory", "visual-cortex"]
+      
+    - name: "Daniel Yamins"
+      affiliation: "Stanford"
+      expertise: ["visual-cortex-modeling", "neural-networks"]
+
+# AI/LLM Configuration
+ai:
+  providers:
+    anthropic:
+      models:
+        - name: "claude-opus-4-20250514"
+          use_for: ["deep-analysis", "research-review", "code-generation"]
+          max_tokens: 16000
+          thinking_budget: 12000
+        - name: "claude-sonnet-4-20250514"
+          use_for: ["general", "verification", "quick-tasks"]
+          max_tokens: 8000
+          
+    openai:
+      models:
+        - name: "gpt-5"
+          use_for: ["complex-reasoning", "meta-review"]
+          reasoning_effort: "high"
+        - name: "gpt-4o"
+          use_for: ["general", "fast-tasks"]
+          
+    google:
+      models:
+        - name: "gemini-2.5-pro"
+          use_for: ["deep-research", "literature-review", "long-context"]
+          thinking_budget: 20000
+          
+    deepseek:
+      models:
+        - name: "deepseek-r1"
+          use_for: ["batch-processing", "cost-efficient"]
+          base_url: "https://api.deepseek.com/v1"
+
+# Research Configuration
+research:
+  focus_areas:
+    - "neuroscience-foundation-models"
+    - "brain-language-alignment"
+    - "multimodal-brain-representation"
+    - "generative-brain-models"
+    
+  datasets:
+    - name: "UK Biobank"
+      modality: "fMRI"
+      subjects: 50000
+      
+    - name: "HCP"
+      modality: ["fMRI", "MEG"]
+      subjects: 1200
+      
+    - name: "Narratives"
+      modality: ["fMRI", "Audio"]
+      subjects: 345
+      
+    - name: "NSD"
+      modality: "fMRI"
+      subjects: 8
+      
+  models:
+    - name: "BrainLM"
+      paper: "ICLR 2024"
+      repo: "https://github.com/xxx/brainlm"
+      
+    - name: "Brain-JEPA"
+      paper: "NeurIPS 2024"
+      repo: "https://github.com/xxx/brain-jepa"
+
+# Budget Configuration (KRW)
+budget:
+  annual_total: 424600000
+  breakdown:
+    student_support: 205000000
+    mentor_fees: 39000000
+    equipment: 125000000
+    operations: 55600000
+
+# Database Configuration
+database:
+  url: "sqlite:///data/fellows.db"
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+
