@@ -1,10 +1,16 @@
 # 🧠 SNU Connectome Fellows Program
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftransconnectome%2Fsnu-connectome-fellows&env=NEXTAUTH_URL,NEXTAUTH_SECRET,DATABASE_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET)
+[![GitHub Stars](https://img.shields.io/github/stars/transconnectome/snu-connectome-fellows?style=social)](https://github.com/transconnectome/snu-connectome-fellows)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-brightgreen)](https://snu-connectome-fellows.vercel.app)
+
 ## Foundations of Neural Intelligence: 인류 천년의 공헌을 위한 차세대 신경과학 인재 양성
 
 <p align="center">
   <img src="assets/logo-placeholder.png" alt="Connectome Fellows" width="300"/>
 </p>
+
+🌐 **Live Website**: [snu-connectome-fellows.vercel.app](https://snu-connectome-fellows.vercel.app)
 
 > *"100년, 1000년을 책임지고 인류의 천년의 공헌을 할 전세계 0.001%의 핵심 인재 양성"*
 
@@ -69,16 +75,28 @@
 
 ## 💰 지원 내역
 
-### 재정 지원
+### 🎁 학생 1명당 연간 총 투자: **3,620만원**
 
-| 지원 항목 | 금액/규모 | 비고 |
-|-----------|----------|------|
-| **월 연구장려금** | 150만~200만원 | 연구 참여도에 따라 차등 |
-| **해외학회 지원** | 연 1회 전액 | 등록비, 항공, 숙박 포함 |
-| **해외 연구 여행** | 방학 중 지원 | 멘토 연구실 방문 |
-| **개인 슈퍼컴퓨터** | NVIDIA DGX Spark | 학생당 1대 지원 목표 |
-| **AI 사용 비용** | 월 50만원 상당 | Claude, GPT-5, Gemini API |
-| **도서/논문 구입** | 연 100만원 | 자유 사용 |
+본 프로그램은 학생 1명에게 **연간 약 3,620만원**의 직접 투자를 제공합니다.
+
+| 구분 | 지원 항목 | 연간 금액 | 상세 |
+|------|----------|----------|------|
+| 💵 **현금 지원** | 월 연구장려금 | **12,000,000원** | 월 100만원 × 12개월 |
+| 🌍 **해외 활동** | 해외 학회 지원 | **5,000,000원** | 연 1회 전액 (등록비, 항공, 숙박) |
+| | 해외 연구 방문 | **5,000,000원** | 방학 중 멘토 연구실 방문 |
+| 🤖 **AI 리소스** | AI API 사용료 | **3,600,000원** | Claude, GPT-5, Gemini 등 (월 30만원) |
+| | AI Agent 구독비 | **3,600,000원** | Coding Agent 무제한 사용 |
+| 📚 **학습 지원** | 도서/논문 구입 | **1,000,000원** | 연구 관련 자유 구입 |
+| 🖥️ **장비 투자** | NVIDIA DGX Spark | **6,000,000원** | 학생당 개인용 AI 슈퍼컴퓨터 1대 |
+| | **총합** | **36,200,000원** | |
+
+**주요 특징:**
+- 💰 연간 현금/서비스 혜택: **3,020만원**
+- 🖥️ 초기 장비 투자: **600만원** (개인용 AI 슈퍼컴퓨터)
+- 🌍 해외 활동 지원: **1,000만원** (학회 + 연구 방문)
+- 🤖 AI 리소스: **720만원** (API + Agent 구독)
+
+> **💡 이 프로그램은 학생 1명당 연간 약 3,620만원의 직접 투자를 통해 차세대 신경과학 연구 인재를 양성합니다.**
 
 ### 인프라 지원
 
@@ -297,6 +315,47 @@ llm_budget_per_student = {
 2. **정부 과제**: NRF, IITP 연구비
 3. **기업 후원**: 삼성, LG, NVIDIA, 네이버
 4. **해외 협력**: NIH, NSF 공동 연구
+
+---
+
+## 🚀 웹사이트 기술 스택
+
+### Frontend Technology
+- **Next.js 14** with App Router and Server Components
+- **TypeScript** for type safety and developer experience
+- **Tailwind CSS** with custom design system
+- **Framer Motion** for smooth animations
+- **React Hook Form + Zod** for robust form validation
+
+### Key Features
+- 🌐 **완전한 한/영 이중언어 지원**
+- 👥 **멘토-펠로우 매칭 시스템**
+- 🔬 **연구 프로젝트 추적 시스템**
+- 📊 **관리자 대시보드 및 분석**
+- ♿ **WCAG 2.1 AA 접근성 준수**
+- 📱 **완전한 반응형 디자인**
+
+### Quick Deploy to Vercel
+1. Fork this repository
+2. Connect to Vercel
+3. Set environment variables
+4. Deploy automatically!
+
+### Local Development
+```bash
+# Clone repository
+git clone https://github.com/transconnectome/snu-connectome-fellows.git
+cd snu-connectome-fellows/website
+
+# Install dependencies
+npm install
+
+# Copy environment file
+cp .env.example .env.local
+
+# Run development server
+npm run dev
+```
 
 ---
 

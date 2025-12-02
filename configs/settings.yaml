@@ -10,9 +10,21 @@ program:
 # Fellow Support Settings
 fellow_support:
   monthly_stipend:
-    min: 1500000  # KRW
-    max: 2000000  # KRW
+    amount: 1000000  # KRW (월 100만원)
+    min: 1000000  # KRW
+    max: 1000000  # KRW
     currency: "KRW"
+  
+  # 학생 1명당 연간 총 투자 규모
+  total_annual_investment_per_fellow: 36200000  # KRW
+  breakdown:
+    cash_stipend: 12000000  # 월 장학금
+    overseas_conference: 5000000  # 해외 학회
+    overseas_research_visit: 5000000  # 해외 연구 방문
+    ai_api: 3600000  # AI API 사용료
+    ai_agent_subscription: 3600000  # AI Agent 구독비
+    books_papers: 1000000  # 도서/논문
+    equipment_dgx_spark: 6000000  # NVIDIA DGX Spark (초기 투자)
   
   ai_budget:
     monthly_krw: 300000  # 한명당 월 30만원
