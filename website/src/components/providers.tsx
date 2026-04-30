@@ -2,7 +2,6 @@
 
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { SessionProvider } from 'next-auth/react';
 import { useState, ReactNode } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { AccessibilityProvider } from './providers/AccessibilityProvider';
@@ -39,7 +38,6 @@ export function Providers({ children }: ProvidersProps) {
   return (
     <PerformanceProvider>
       <AccessibilityProvider>
-        <SessionProvider>
           <QueryClientProvider client={queryClient}>
             {children}
 
@@ -79,7 +77,6 @@ export function Providers({ children }: ProvidersProps) {
             <ReactQueryDevtools initialIsOpen={false} />
           )}
           </QueryClientProvider>
-        </SessionProvider>
       </AccessibilityProvider>
     </PerformanceProvider>
   );

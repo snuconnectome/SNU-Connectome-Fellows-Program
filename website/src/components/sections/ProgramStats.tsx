@@ -24,13 +24,13 @@ const stats = [
   },
   {
     icon: UserGroupIcon,
-    label: 'Elite Selection',
-    labelKorean: '엘리트 선발',
-    value: '0.001%',
-    subtitle: 'global talent',
-    subtitleKorean: '글로벌 인재',
-    description: 'Targeting the top 0.001% of global talent for humanity\'s contribution',
-    descriptionKorean: '인류 공헌을 위한 전 세계 상위 0.001% 인재 대상',
+    label: 'PI Direct Time',
+    labelKorean: 'PI 직접 시간',
+    value: '1:1',
+    subtitle: 'mentoring',
+    subtitleKorean: '맞춤 지도',
+    description: 'Weekly 1:1 with the PI. No postdoc layer. Intentionally small cohort so each fellow gets deep individual investment.',
+    descriptionKorean: 'PI와 주 1회 1:1 미팅. 사이에 박사후 layer가 없고, cohort가 작아 한 명 당 깊이 있는 투자가 가능합니다.',
     color: 'from-purple-400 to-pink-500',
   },
   {
@@ -194,11 +194,11 @@ export function ProgramStats() {
             이 수치들은 우수성에 대한 우리의 약속을 나타냅니다
           </p>
           <div className="flex items-center justify-center space-x-4 text-sm text-gray-400">
-            <span>Version 1.0</span>
+            <span>Version 1.1</span>
             <span>•</span>
-            <span>Updated December 2025</span>
+            <span>Updated April 2026</span>
             <span>•</span>
-            <span className="korean">2025년 12월 업데이트</span>
+            <span className="korean">2026년 4월 업데이트</span>
           </div>
         </motion.div>
       </div>

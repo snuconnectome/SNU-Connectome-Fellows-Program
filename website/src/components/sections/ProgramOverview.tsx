@@ -41,11 +41,11 @@ const features = [
   },
   {
     icon: UserGroupIcon,
-    title: 'Elite Community',
-    titleKorean: '엘리트 커뮤니티',
-    description: 'Join an exclusive network of top 0.001% global talent dedicated to advancing neuroscience through AI.',
-    descriptionKorean: 'AI를 통한 신경과학 발전에 헌신하는 전 세계 상위 0.001% 인재들의 독점적 네트워크',
-    highlights: ['Top 0.001% Talent', 'Alumni Network', 'Global Connections'],
+    title: 'Direct PI Mentorship',
+    titleKorean: 'PI 직접 지도',
+    description: 'Weekly 1:1 sessions with the PI. Intentionally small cohort — investment per fellow exceeds typical lab postdocs. No postdoc layer between you and the PI.',
+    descriptionKorean: 'PI와 주 1회 1:1 미팅. 의도적으로 작은 cohort — 한 명 당 투자가 일반 랩 박사후보다 큽니다. PI와의 사이에 박사후 layer가 없습니다.',
+    highlights: ['Weekly 1:1 with PI', 'Intentionally Small Cohort', 'No Postdoc Layer'],
     color: 'from-blue-400 to-indigo-500',
   },
   {
@@ -166,6 +166,42 @@ export function ProgramOverview() {
           ))}
         </motion.div>
 
+        {/* Who We Look For */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-4xl mx-auto mb-16 px-4"
+        >
+          <h3 className="text-3xl font-bold text-gray-900 mb-2 text-center">
+            Who we look for
+          </h3>
+          <p className="text-lg korean text-gray-500 mb-8 text-center">
+            어떤 학부생을 찾습니까
+          </p>
+
+          <ul className="korean text-gray-700 leading-relaxed space-y-3 mb-8 list-none">
+            <li className="flex items-start">
+              <span className="text-brain-primary mr-3 mt-1">·</span>
+              <span>50세 본인의 모습을 한 장면으로 묘사할 수 있는 사람</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-brain-primary mr-3 mt-1">·</span>
+              <span>지난 12개월 동안 학점이 걸리지 않은 한 가지 주제에 깊이 들어가 본 사람</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-brain-primary mr-3 mt-1">·</span>
+              <span>본인의 전공으로 설명되지 않는 개념 두 개를 연결할 수 있는 사람</span>
+            </li>
+          </ul>
+
+          <p className="korean text-gray-600 text-base leading-relaxed border-l-4 border-gray-200 pl-4 italic">
+            본인의 꿈을 한 문장으로 말하기 어려우시다면 — 한 학기 더 생각하신 후 2027 cohort에 지원하시는 것도 좋은 선택입니다.
+            지원의 부담이 본인을 막지 않도록, 본인의 결이 가장 분명한 때 지원하시면 됩니다.
+          </p>
+        </motion.div>
+
         {/* Call to Action */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -176,14 +212,14 @@ export function ProgramOverview() {
         >
           <div className="bg-gradient-brand rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">
-              Ready to Shape the Future of Neuroscience?
+              Read the prompt. Write one essay.
             </h3>
             <p className="text-xl mb-2 korean">
-              신경과학의 미래를 만들어갈 준비가 되셨나요?
+              프롬프트를 읽고, 한 편의 글을 써 주십시오.
             </p>
             <p className="text-brain-light mb-8 max-w-2xl mx-auto leading-relaxed">
-              Join an elite community of researchers working on Foundation Models
-              that will revolutionize our understanding of the human brain.
+              800–1200 words on a single dream. No CV, no recommendation letters,
+              no GPA cutoff. We read every submission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -2,21 +2,21 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mentors | SNU Connectome Fellows',
-  description: 'Mentor profiles — content migration in progress.',
+  title: 'Publications | SNU Connectome Lab',
+  description: 'Lab publications — content migration in progress.',
 };
 
-export default function MentorsPage() {
+export default function PublicationsPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4 pt-24">
       <div className="text-center max-w-2xl">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Mentors</h1>
-        <p className="text-xl korean text-gray-700 mb-8">멘토진</p>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
+        <p className="text-xl korean text-gray-700 mb-8">논문</p>
         <p className="text-gray-500 leading-relaxed mb-2 korean">
-          정식 멘토 프로필 페이지는 준비 중입니다. Princeton (Hasson Lab), BNL, MIT, Stanford 협력 멘토 명단은 홈페이지의 Mentor Network 섹션을 참조해 주십시오.
+          논문 목록은 이전 작업 중입니다. 정식 페이지는 2026 Fellows 모집 마감 후 갱신됩니다.
         </p>
         <p className="text-gray-400 text-sm mb-8">
-          Mentor profile pages are in preparation. See the Mentor Network section on the homepage.
+          Publications list is being migrated. It will be updated after the 2026 Fellows recruitment closes.
         </p>
         <Link
           href="/apply"

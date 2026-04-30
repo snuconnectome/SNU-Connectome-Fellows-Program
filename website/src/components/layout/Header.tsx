@@ -1,9 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useSession, signIn, signOut } from 'next-auth/react';
 import { Disclosure } from '@headlessui/react';
 import {
   Bars3Icon,
@@ -12,18 +11,14 @@ import {
   UserGroupIcon,
   BeakerIcon,
   DocumentTextIcon,
-  PresentationChartLineIcon,
   ClipboardDocumentCheckIcon,
 } from '@heroicons/react/24/outline';
 import { NavigationItem } from '@/types';
 import clsx from 'clsx';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const navigation: NavigationItem[] = [
-  {
-    name: 'Home',
-    nameKorean: '홈',
-    href: '/',
-  },
+  { name: 'Home', nameKorean: '홈', href: '/' },
   {
     name: 'Program',
     nameKorean: '프로그램',
@@ -74,64 +69,70 @@ const navigation: NavigationItem[] = [
 
 export function Header() {
   const pathname = usePathname();
-  const { data: session } = useSession();
+  const [scrolled, setScrolled] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 50);
+  });
 
   return (
-    <Disclosure as="nav" className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <Disclosure as="nav" className={clsx(
+      "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
+      scrolled ? "bg-neuro-base/80 backdrop-blur-xl border-white/5 shadow-lg" : "bg-transparent"
+    )}>
       {({ open }) => (
         <>
           <div className="container-max">
-            <div className="relative flex h-16 justify-between items-center">
+            <div className="relative flex h-20 justify-between items-center">
               {/* Logo */}
               <div className="flex items-center">
-                <Link href="/" className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-brand rounded-lg flex items-center justify-center">
+                <Link href="/" className="flex items-center space-x-3 group">
+                  <div className="w-10 h-10 bg-gradient-to-br from-neuro-primary to-neuro-secondary rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-neuro-primary/50 transition-all duration-300">
                     <span className="text-white font-bold text-xl">🧠</span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-lg font-bold text-gray-900">
-                      Connectome Fellows
+                    <span className="text-lg font-bold text-white tracking-tight">
+                      Connectome
                     </span>
-                    <span className="text-xs text-gray-500 korean">
-                      서울대학교 커넥톰 펠로우십
+                    <span className="text-[10px] text-gray-400 korean tracking-widest uppercase">
+                      Fellows Program
                     </span>
                   </div>
                 </Link>
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden lg:flex lg:items-center lg:space-x-8">
+              <div className="hidden lg:flex lg:items-center lg:space-x-1">
                 {navigation.map((item) => (
-                  <div key={item.name} className="relative group">
+                  <div key={item.name} className="relative group px-1">
                     <Link
                       href={item.href}
                       className={clsx(
-                        'nav-link px-3 py-2 text-sm',
-                        pathname === item.href ? 'active' : ''
+                        'nav-link px-4 py-2 rounded-full text-sm transition-all duration-200',
+                        pathname === item.href
+                          ? 'text-white bg-white/10'
+                          : 'text-gray-400 hover:text-white hover:bg-white/5'
                       )}
                     >
                       <span className="flex items-center space-x-1">
-                        {item.icon && <item.icon className="w-4 h-4" />}
                         <span>{item.name}</span>
-                        <span className="text-xs text-gray-400 korean">
-                          {item.nameKorean}
-                        </span>
                       </span>
                     </Link>
 
                     {/* Dropdown Menu */}
                     {item.children && (
-                      <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div className="py-2">
+                      <div className="absolute top-full left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                        <div className="glass-panel p-2 shadow-2xl ring-1 ring-black ring-opacity-5 overflow-hidden">
                           {item.children.map((child) => (
                             <Link
                               key={child.name}
                               href={child.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brain-primary transition-colors duration-200"
+                              className="block px-4 py-3 text-sm text-gray-300 hover:bg-white/10 hover:text-white rounded-lg transition-colors duration-200"
                             >
-                              <div className="flex justify-between items-center">
-                                <span>{child.name}</span>
-                                <span className="text-xs text-gray-400 korean">
+                              <div className="flex flex-col">
+                                <span className="font-medium">{child.name}</span>
+                                <span className="text-xs text-gray-500 korean mt-0.5">
                                   {child.nameKorean}
                                 </span>
                               </div>
@@ -143,45 +144,17 @@ export function Header() {
                   </div>
                 ))}
 
-                {/* Auth/CTA Section */}
-                <div className="flex items-center space-x-4 ml-4">
-                  {session ? (
-                    <>
-                      <div className="text-sm text-gray-700">
-                        <span>{session.user?.name}</span>
-                        {session.user?.role === 'admin' && (
-                          <Link href="/admin" className="ml-2 text-brain-primary hover:text-brain-secondary">
-                            Admin Panel
-                          </Link>
-                        )}
-                      </div>
-                      <button
-                        onClick={() => signOut()}
-                        className="btn-secondary text-sm"
-                      >
-                        Sign Out
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <button
-                        onClick={() => signIn()}
-                        className="btn-ghost text-sm"
-                      >
-                        Sign In
-                      </button>
-                      <Link href="/apply" className="btn-primary">
-                        <span>Apply Now</span>
-                        <span className="ml-1 text-xs korean">지원하기</span>
-                      </Link>
-                    </>
-                  )}
+                {/* CTA Section */}
+                <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-white/10">
+                  <Link href="/apply" className="btn-primary px-6 py-2 text-sm shadow-lg shadow-neuro-primary/20">
+                    <span>Apply</span>
+                  </Link>
                 </div>
               </div>
 
               {/* Mobile menu button */}
               <div className="lg:hidden">
-                <Disclosure.Button className="relative inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brain-primary">
+                <Disclosure.Button className="relative inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -194,42 +167,40 @@ export function Header() {
           </div>
 
           {/* Mobile Navigation Panel */}
-          <Disclosure.Panel className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+          <Disclosure.Panel className="lg:hidden bg-neuro-base/95 backdrop-blur-xl border-b border-white/10">
+            <div className="px-4 pt-2 pb-6 space-y-1">
               {navigation.map((item) => (
                 <div key={item.name}>
                   <Link
                     href={item.href}
                     className={clsx(
-                      'block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200',
+                      'block px-3 py-3 rounded-lg text-base font-medium transition-colors duration-200',
                       pathname === item.href
-                        ? 'text-brain-primary bg-brain-primary/10'
-                        : 'text-gray-700 hover:text-brain-primary hover:bg-gray-50'
+                        ? 'text-white bg-white/10'
+                        : 'text-gray-400 hover:text-white hover:bg-white/5'
                     )}
                   >
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
+                      <div className="flex items-center space-x-3">
                         {item.icon && <item.icon className="w-5 h-5" />}
                         <span>{item.name}</span>
                       </div>
-                      <span className="text-sm text-gray-400 korean">
+                      <span className="text-sm text-gray-600 korean">
                         {item.nameKorean}
                       </span>
                     </div>
                   </Link>
-
-                  {/* Mobile Submenu */}
                   {item.children && (
-                    <div className="ml-6 mt-1 space-y-1">
+                    <div className="ml-4 pl-4 border-l border-white/10 mt-1 space-y-1">
                       {item.children.map((child) => (
                         <Link
                           key={child.name}
                           href={child.href}
-                          className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-brain-primary hover:bg-gray-50 transition-colors duration-200"
+                          className="block px-3 py-2 rounded-md text-sm text-gray-500 hover:text-white hover:bg-white/5 transition-colors duration-200"
                         >
                           <div className="flex justify-between items-center">
                             <span>{child.name}</span>
-                            <span className="text-xs text-gray-400 korean">
+                            <span className="text-xs text-gray-600 korean">
                               {child.nameKorean}
                             </span>
                           </div>
@@ -239,14 +210,6 @@ export function Header() {
                   )}
                 </div>
               ))}
-
-              {/* Mobile CTA */}
-              <div className="px-3 pt-4">
-                <Link href="/apply" className="btn-primary w-full justify-center">
-                  <span>Apply Now</span>
-                  <span className="ml-2 text-sm korean">지원하기</span>
-                </Link>
-              </div>
             </div>
           </Disclosure.Panel>
         </>

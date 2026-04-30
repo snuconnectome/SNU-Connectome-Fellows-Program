@@ -4,6 +4,7 @@ import './globals.css';
 import { Providers } from '@/components/providers';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { NeuroBackground } from '@/components/ui/NeuroBackground'; // Added import for NeuroBackground
 
 const inter = Inter({
   subsets: ['latin'],
@@ -118,9 +119,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Viewport for mobile optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </head>
-      <body className="font-sans antialiased bg-white text-gray-900 selection:bg-brain-primary selection:text-white dark:bg-gray-900 dark:text-gray-100">
+      <body className="font-sans antialiased bg-neuro-base text-gray-100 selection:bg-neuro-primary selection:text-white">
+        <NeuroBackground />
         <Providers>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col relative">
             {/* Skip navigation links for accessibility */}
             <nav
               className="skip-links sr-only focus-within:not-sr-only fixed top-0 left-0 w-full bg-white dark:bg-gray-900 border-b-2 border-brain-primary z-[9999] p-4"

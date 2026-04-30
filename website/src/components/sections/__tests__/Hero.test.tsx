@@ -2,114 +2,48 @@ import { screen } from '@testing-library/react';
 import { Hero } from '../Hero';
 import { render } from '@/test/test-utils';
 
-describe('Hero Component', () => {
-  it('renders hero section with main headings', () => {
+describe('Hero Component (2026 mission-aligned)', () => {
+  it('renders main headline', () => {
     render(<Hero />);
-
-    // Check for main English heading
     expect(screen.getByText('Foundations of')).toBeInTheDocument();
     expect(screen.getByText('Neural Intelligence')).toBeInTheDocument();
-
-    // Check for Korean heading
-    expect(screen.getByText('인류 천년의 공헌을 위한')).toBeInTheDocument();
-    expect(screen.getByText('차세대 신경과학 인재 양성')).toBeInTheDocument();
   });
 
-  it('displays key statistics', () => {
+  it('renders mission-aligned Korean subhead', () => {
     render(<Hero />);
+    expect(screen.getByText(/꿈은 구체적으로/)).toBeInTheDocument();
+    expect(screen.getByText(/분야는 두 개 이상/)).toBeInTheDocument();
+  });
 
-    // Check for investment amount
+  it('renders 2026 cohort badge', () => {
+    render(<Hero />);
+    expect(screen.getByText('2026 Cohort — Aug 31 Deadline')).toBeInTheDocument();
+    expect(screen.getByText('2026년 모집 중 — 8월 31일 마감')).toBeInTheDocument();
+  });
+
+  it('renders anti-resume description (KR & EN)', () => {
+    render(<Hero />);
+    expect(screen.getByText(/We are not collecting resumes/)).toBeInTheDocument();
+    expect(screen.getByText(/저희는 이력서를 모으지 않습니다/)).toBeInTheDocument();
+  });
+
+  it('renders cohort stats with PI direct time', () => {
+    render(<Hero />);
     expect(screen.getByText('₩36.2M')).toBeInTheDocument();
-    expect(screen.getByText('per fellow')).toBeInTheDocument();
-
-    // Check for elite program indicator
-    expect(screen.getByText('Top 0.001%')).toBeInTheDocument();
-    expect(screen.getByText('global talent')).toBeInTheDocument();
-
-    // Check for international network
-    expect(screen.getByText('4+')).toBeInTheDocument();
-    expect(screen.getByText('top universities')).toBeInTheDocument();
+    expect(screen.getByText('1:1')).toBeInTheDocument();
+    expect(screen.getByText('PI Direct Time')).toBeInTheDocument();
   });
 
-  it('includes call-to-action buttons', () => {
+  it('does NOT contain mission-misaligned legacy copy', () => {
     render(<Hero />);
+    expect(screen.queryByText(/Top 0\.001%/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Elite Program/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/0\.001%/)).not.toBeInTheDocument();
+  });
 
+  it('includes Apply Now CTA pointing to /apply', () => {
+    render(<Hero />);
     const applyButton = screen.getByRole('link', { name: /apply now/i });
-    const learnMoreButton = screen.getByRole('link', { name: /learn more/i });
-
-    expect(applyButton).toBeInTheDocument();
     expect(applyButton).toHaveAttribute('href', '/apply');
-
-    expect(learnMoreButton).toBeInTheDocument();
-    expect(learnMoreButton).toHaveAttribute('href', '/program');
-  });
-
-  it('displays program badge with application status', () => {
-    render(<Hero />);
-
-    expect(screen.getByText('Now Accepting Applications')).toBeInTheDocument();
-    expect(screen.getByText('지원 모집 중')).toBeInTheDocument();
-  });
-
-  it('includes scroll indicator', () => {
-    render(<Hero />);
-
-    expect(screen.getByText('Scroll to explore')).toBeInTheDocument();
-    expect(screen.getByText('스크롤하여 탐색')).toBeInTheDocument();
-  });
-
-  it('renders all statistics with proper structure', () => {
-    render(<Hero />);
-
-    // Check that all stat cards are rendered
-    const statCards = screen.getAllByRole('generic').filter(el =>
-      el.className.includes('card-featured')
-    );
-
-    expect(statCards).toHaveLength(4);
-  });
-
-  it('has proper accessibility attributes', () => {
-    render(<Hero />);
-
-    // Hero section should be accessible
-    const heroSection = screen.getByRole('generic');
-    expect(heroSection).toBeInTheDocument();
-
-    // CTA buttons should be accessible
-    const buttons = screen.getAllByRole('link');
-    buttons.forEach(button => {
-      expect(button).toHaveAttribute('href');
-    });
-  });
-
-  it('displays bilingual content correctly', () => {
-    render(<Hero />);
-
-    // Check that Korean content has proper class
-    const koreanElements = document.querySelectorAll('.korean');
-    expect(koreanElements.length).toBeGreaterThan(0);
-
-    // Verify specific bilingual pairs
-    expect(screen.getByText('Apply Now')).toBeInTheDocument();
-    expect(screen.getByText('지원하기')).toBeInTheDocument();
-
-    expect(screen.getByText('Learn More')).toBeInTheDocument();
-    expect(screen.getByText('더 알아보기')).toBeInTheDocument();
-  });
-
-  it('renders gradient text elements', () => {
-    render(<Hero />);
-
-    // Check for gradient text classes
-    const gradientElements = document.querySelectorAll('.gradient-text, .gradient-text-accent');
-    expect(gradientElements.length).toBeGreaterThan(0);
-  });
-
-  it('includes program description', () => {
-    render(<Hero />);
-
-    expect(screen.getByText(/Training the next generation of neuroscience leaders/)).toBeInTheDocument();
-    expect(screen.getByText(/최첨단 Foundation Model 연구/)).toBeInTheDocument();
   });
 });

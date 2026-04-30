@@ -12,7 +12,7 @@
 
 🌐 **Live Website**: [snu-connectome-fellows.vercel.app](https://snu-connectome-fellows.vercel.app)
 
-> *"100년, 1000년을 책임지고 인류의 천년의 공헌을 할 전세계 0.001%의 핵심 인재 양성"*
+> *"꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상."*
 
 ---
 
@@ -65,11 +65,13 @@
 
 ### 선발 기준
 
-- 학업 성취도 (GPA 4.0 이상 권장)
-- 연구 동기 및 비전
-- 프로그래밍 능력 (Python, PyTorch)
-- 영어 능력 (국제 협력 필수)
-- **가장 중요**: 인류에 기여하고자 하는 열정과 포부
+본 프로그램은 다음 세 가지 자질을 가장 우선시합니다:
+
+- **꿈**: 50세의 본인 모습을 한 장면으로 묘사할 수 있는가
+- **Unfailing urge to know**: 학점·외부 지시 없이 12개월 이상 끄지 않고 파고든 한 가지 주제가 있는가
+- **Cross-domain integrative flexibility**: 본인 전공 밖 두 개념을 합쳐 새 질문을 만들 수 있는가
+
+GPA·이력서·추천서는 채점에 반영하지 않습니다. Python/PyTorch는 합격 후 onboarding에서 보강 가능합니다.
 
 ---
 
@@ -363,10 +365,12 @@ npm run dev
 
 ### 지원 절차
 
-1. **서류 접수**: 자기소개서, 연구계획서, 성적증명서
-2. **1차 심사**: 서류 평가
-3. **2차 면접**: 연구 발표 및 인터뷰
-4. **최종 선발**: 약 5명 내외
+1. **Google Form 1개 제출**: 800–1200자 dream essay + 키워드 5개 + LLM disclosure
+2. **서류 평가**: PI 직접 채점 (자질 3개: 꿈/호기심/유연성, 자질당 1–4점)
+3. **30분 화상 면접** (1차 통과자 대상): 에세이 elaboration + 즉석 도메인 합성 과제
+4. **최종 선발**: 1–3명 (Phase 0 funding lock 결과에 따라)
+
+추천서·CV·영어 점수·GPA cutoff은 요구하지 않습니다.
 
 ### 연락처
 
@@ -400,8 +404,8 @@ npm run dev
 
 ---
 
-*Last Updated: December 2025*  
-*Version: 1.0*  
+*Last Updated: April 2026*  
+*Version: 1.1 (mission-aligned recruitment)*  
 *© 2025 SNU Connectome Lab. All rights reserved.*
 
 

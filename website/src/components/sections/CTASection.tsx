@@ -22,21 +22,21 @@ export function CTASection() {
 
           {/* Headlines */}
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Begin Your Journey
+            Write one short essay. We read every one.
           </h2>
           <p className="text-2xl md:text-3xl font-semibold mb-2 korean">
-            여정을 시작하세요
+            짧은 글 한 편을 써 주십시오. 한 편도 빠짐없이 읽겠습니다.
           </p>
 
           <p className="text-xl text-brain-light mb-8 max-w-3xl mx-auto leading-relaxed">
-            Join an elite community dedicated to advancing neuroscience through AI.
+            We are not collecting resumes. We want to see one question of yours.
             <br />
-            Applications are now open for the 2025 cohort.
+            Applications are open for the 2026 cohort.
           </p>
           <p className="text-lg text-white/80 korean mb-12 max-w-2xl mx-auto leading-relaxed">
-            AI를 통한 신경과학 발전에 헌신하는 엘리트 커뮤니티에 합류하세요.
+            저희는 이력서를 모으지 않습니다. 본인의 질문 한 가지를 보고자 합니다.
             <br />
-            2025년 코호트 지원이 시작되었습니다.
+            2026년 cohort 지원을 받습니다.
           </p>
 
           {/* CTA Buttons */}
@@ -62,9 +62,9 @@ export function CTASection() {
           {/* Additional Info */}
           <div className="mt-12 pt-8 border-t border-white/20">
             <p className="text-sm text-white/60">
-              Application deadline: March 31, 2025
+              Application deadline: August 31, 2026
               <span className="mx-2">•</span>
-              <span className="korean">지원 마감: 2025년 3월 31일</span>
+              <span className="korean">지원 마감: 2026년 8월 31일</span>
             </p>
           </div>
         </motion.div>

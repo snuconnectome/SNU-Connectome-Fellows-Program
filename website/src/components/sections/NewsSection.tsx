@@ -15,13 +15,13 @@ const news = [
     excerptKorean: 'SNU 커넥톰 펠로우십 프로그램이 신경과학 연구를 위한 포괄적 지원과 함께 공식 런칭',
   },
   {
-    title: 'Application Period Opens',
-    titleKorean: '지원 기간 시작',
-    date: '2025-02-01',
+    title: '2026 Cohort Applications Open',
+    titleKorean: '2026 cohort 지원 개시',
+    date: '2026-05-01',
     category: 'Applications',
     categoryKorean: '지원',
-    excerpt: 'Applications are now open for the inaugural 2025 cohort. Application deadline: March 31, 2025.',
-    excerptKorean: '2025년 첫 코호트 지원이 시작되었습니다. 지원 마감: 2025년 3월 31일',
+    excerpt: 'Applications open for the 2026 cohort. One short essay (800–1200 words). No CV, no recommendation letters. Deadline: August 31, 2026.',
+    excerptKorean: '2026 cohort 지원이 시작되었습니다. 800–1200자 dream essay 1편. CV·추천서 없음. 마감: 2026년 8월 31일.',
   },
   {
     title: 'BrainLM Research Collaboration',

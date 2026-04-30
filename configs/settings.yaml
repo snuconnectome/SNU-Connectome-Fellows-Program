@@ -3,10 +3,27 @@
 
 program:
   name: "SNU Connectome Fellows Program"
-  version: "1.0.0"
-  year: 2025
-  max_fellows: 1  # 초기 1년은 1명으로 시작 (펀드 확보 후 확대 예정)
-  
+  version: "1.1.0"
+  year: 2026
+  max_fellows: 1  # Phase 0 funding lock A1 (현 펀드 ₩53.2M = 1명). PI가 A2/A3 확보 시 갱신.
+
+# 2026 Cohort 모집 일정 (잠정, PI 확정 필요)
+application:
+  cohort_2026:
+    deadline_iso: "2026-08-31T23:59:00+09:00"
+    interview_window: "2026-09-01..2026-09-15"
+    program_start: "2027-03-02"
+    # TODO_PI_REPLACE: PI가 Google Form 작성 후 published URL 교체
+    google_form_url: "https://forms.gle/TODO_REPLACE_BEFORE_DEPLOY"
+    # 모집 공고 배포 채널 (Day 1.5)
+    distribution_channels:
+      - "SNU eClass announcement"
+      - "BMB 연계전공 메일링 리스트"
+      - "심리학과 / 뇌인지과학과 / 생명과학부 / 의대 / 자유전공 게시판"
+      - "Connectome Lab SNS (Instagram/X)"
+      - "Lab 출신 학부생 입소문"
+      - "(선택) 한국심리학회 학부생 멤버십 메일링"
+
 # Fellow Support Settings
 fellow_support:
   monthly_stipend:
