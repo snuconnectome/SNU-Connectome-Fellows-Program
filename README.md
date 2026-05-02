@@ -4,7 +4,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/transconnectome/snu-connectome-fellows?style=social)](https://github.com/transconnectome/snu-connectome-fellows)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-brightgreen)](https://snu-connectome-fellows.vercel.app)
 
-## Foundations of Neural Intelligence: 인류 천년의 공헌을 위한 차세대 신경과학 인재 양성
+## Foundations of Neural Intelligence: 강의계획서 안에 본인의 질문이 들어가지 않는 학부생을 위한 펠로우십
 
 <p align="center">
   <img src="assets/logo-placeholder.png" alt="Connectome Fellows" width="300"/>
