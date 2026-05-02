@@ -9,11 +9,11 @@ import { NewsSection } from '@/components/sections/NewsSection';
 import { CTASection } from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'SNU Connectome Fellows Program | 차세대 신경과학 인재 양성',
-  description: '인류의 천년 공헌을 위한 차세대 신경과학 인재 양성 프로그램. 연간 3,620만원 투자로 차세대 신경과학 연구자를 육성합니다.',
+  title: 'SNU Connectome Fellows | 2026 Cohort 모집 (8월 31일 마감)',
+  description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 서울대 Connectome Lab의 학부생 펠로우십 — 2026 cohort 모집 중. 이력서가 아니라 본인의 질문 한 가지를 봅니다.',
   openGraph: {
-    title: 'SNU Connectome Fellows Program',
-    description: '차세대 신경과학 인재 양성을 위한 서울대학교 커넥톰 펠로우십 프로그램',
+    title: 'SNU Connectome Fellows | 2026 Cohort',
+    description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 학부생 펠로우십 — 8월 31일 마감.',
     images: ['/og-home.png'],
   },
 };

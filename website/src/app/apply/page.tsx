@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import { ApplicationFormSimple as ApplicationForm } from '@/components/forms/ApplicationFormSimple';
 
 export const metadata: Metadata = {
-  title: 'Apply | SNU Connectome Fellows Program',
-  description: '서울대학교 커넥톰 펠로우십 프로그램에 지원하세요. 차세대 신경과학 인재 양성을 위한 특별한 기회입니다.',
+  title: 'Apply | SNU Connectome Fellows 2026',
+  description: '짧은 글 한 편으로 지원합니다. 800–1200자 dream essay 한 편. CV·추천서·GPA cutoff 없음. 2026년 8월 31일 마감.',
   openGraph: {
-    title: 'Apply to SNU Connectome Fellows Program',
-    description: '차세대 신경과학 인재 양성을 위한 서울대학교 커넥톰 펠로우십 프로그램 지원',
+    title: 'Apply to SNU Connectome Fellows | 2026 Cohort',
+    description: '짧은 글 한 편으로 지원합니다. 800–1200자 dream essay. 8월 31일 마감.',
     images: ['/og-apply.png'],
   },
 };

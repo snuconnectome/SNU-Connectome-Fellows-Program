@@ -74,10 +74,10 @@ export function Footer() {
               </div>
 
               <p className="text-sm text-gray-400 mb-6 korean leading-relaxed">
-                인류의 천년 공헌을 위한 차세대 신경과학 인재 양성 프로그램
+                꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 서울대 Connectome Lab의 학부생 펠로우십.
               </p>
               <p className="text-sm text-gray-500 mb-8 leading-relaxed">
-                Training the next generation of neuroscience leaders for humanity's thousand-year contribution
+                A specific dream. A curiosity that won&apos;t switch off. At least two fields in your head.
               </p>
 
               {/* Contact Info */}
