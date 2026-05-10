@@ -9,6 +9,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 //   키워드 5개/(선택)GitHub URL/LLM disclosure 라디오/Fact-check 동의 체크박스
 // Then replace the constant below with the published forms.gle short URL.
 const GOOGLE_FORM_URL = 'https://forms.gle/TODO_REPLACE_BEFORE_DEPLOY';
+const FORM_READY = !GOOGLE_FORM_URL.includes('TODO_REPLACE');
 
 const ESSAY_PROMPT_KR = `당신이 50세가 되었을 때, 본인의 연구가 세상의 어떤 구체적인 장면을 바꾸어 놓았기를 바라십니까? 그 장면 한 컷을 묘사하고, 그 장면에 도달하기 위해 앞으로 5년간 본인이 해결해야 할 가장 어려운 한 가지 문제와, 그 문제가 현재 풀리지 않는 이유 한 가지를 적어 주십시오.`;
 
@@ -45,19 +46,32 @@ export function ApplicationFormSimple() {
             </p>
           </div>
 
-          <Link
-            href={GOOGLE_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-full px-8 py-4 bg-brain-primary text-white text-lg font-medium rounded-lg hover:bg-brain-primary/90 transition-colors shadow-md hover:shadow-lg"
-          >
-            <span>Open Application Form</span>
-            <span className="ml-3 korean">지원서 열기</span>
-            <ArrowRightIcon className="w-5 h-5 ml-3" />
-          </Link>
+          {FORM_READY ? (
+            <Link
+              href={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-full px-8 py-4 bg-brain-primary text-white text-lg font-medium rounded-lg hover:bg-brain-primary/90 transition-colors shadow-md hover:shadow-lg"
+            >
+              <span>Open Application Form</span>
+              <span className="ml-3 korean">지원서 열기</span>
+              <ArrowRightIcon className="w-5 h-5 ml-3" />
+            </Link>
+          ) : (
+            <div
+              role="status"
+              aria-disabled="true"
+              className="inline-flex items-center justify-center w-full px-8 py-4 bg-gray-100 text-gray-500 text-lg font-medium rounded-lg cursor-not-allowed border-2 border-dashed border-gray-300"
+            >
+              <span>Application Form Coming Soon</span>
+              <span className="ml-3 korean">지원서 준비 중</span>
+            </div>
+          )}
 
           <p className="text-xs text-gray-400 text-center mt-4">
-            Submissions are stored by Google Forms.
+            {FORM_READY
+              ? 'Submissions are stored by Google Forms.'
+              : '곧 활성화됩니다 / Form will be activated shortly.'}
           </p>
         </div>
       </div>
