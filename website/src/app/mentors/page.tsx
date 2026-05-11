@@ -13,10 +13,10 @@ export default function MentorsPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Mentors</h1>
         <p className="text-xl korean text-gray-700 mb-8">멘토진</p>
         <p className="text-gray-500 leading-relaxed mb-2 korean">
-          정식 멘토 프로필 페이지는 준비 중입니다. Princeton (Hasson Lab), BNL, MIT, Stanford 협력 멘토 명단은 홈페이지의 Mentor Network 섹션을 참조해 주십시오.
+          정식 멘토 프로필 페이지는 준비 중입니다. 현재 활동 중인 협력 멘토(BNL·Princeton(Hasson Lab))와 lab 책임자(차지욱 교수) 명단은 홈페이지의 Mentor Network 섹션을 참조해 주십시오. MIT·Stanford는 lab alumni 네트워크입니다.
         </p>
         <p className="text-gray-400 text-sm mb-8">
-          Mentor profile pages are in preparation. See the Mentor Network section on the homepage.
+          Mentor profile pages are in preparation. See the Program Lead and Mentors section on the homepage. Active partners: BNL and Princeton (Hasson Lab). Alumni network: MIT EECS, Stanford.
         </p>
         <Link
           href="/apply"

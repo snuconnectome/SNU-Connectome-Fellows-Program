@@ -24,9 +24,10 @@ export default function ApplyPage() {
             짧은 글 한 편을 써 주십시오. 한 편도 빠짐없이 읽겠습니다.
           </p>
           <p className="text-xl text-brain-light max-w-3xl mx-auto leading-relaxed">
-            800–1200 words on a single question. No CV, no recommendation letters,
-            no GPA cutoff. We are looking for one specific dream, one curiosity that
-            won&apos;t switch off, and a mind that holds at least two fields at once.
+            800–1200 words (English) or 1500–2400 자 (Korean) on a single question.
+            No CV, no recommendation letters, no GPA cutoff. We are looking for one
+            specific dream, one curiosity you cannot turn off, and a mind that connects
+            at least two disciplines.
           </p>
         </div>
       </section>

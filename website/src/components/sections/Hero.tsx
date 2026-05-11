@@ -14,35 +14,35 @@ import { TextReveal } from '@/components/ui/TextReveal';
 
 const stats = [
   {
-    label: 'Annual Investment',
-    labelKorean: '연간 투자',
+    label: 'Per-Fellow Investment',
+    labelKorean: '펠로우당 투자',
     value: '₩36.2M',
-    description: 'per fellow',
-    descriptionKorean: '펠로우당',
+    description: 'Year 1 total',
+    descriptionKorean: '1년차 총액',
     icon: CurrencyDollarIcon,
   },
   {
-    label: 'International Network',
-    labelKorean: '국제 네트워크',
-    value: '4+',
-    description: 'top universities',
-    descriptionKorean: '최고 대학',
-    icon: GlobeAltIcon,
+    label: 'Cohort Size (cap)',
+    labelKorean: 'Cohort 규모 (제한)',
+    value: '3',
+    description: 'fellows / year',
+    descriptionKorean: '명 / 연',
+    icon: SparklesIcon,
   },
   {
-    label: 'Research Focus',
-    labelKorean: '연구 분야',
-    value: '100%',
-    description: 'AI + Neuroscience',
-    descriptionKorean: 'AI + 신경과학',
-    icon: SparklesIcon,
+    label: 'Active Partner Institutions',
+    labelKorean: '현재 협력 기관',
+    value: '2',
+    description: 'BNL + Princeton',
+    descriptionKorean: 'BNL + Princeton',
+    icon: GlobeAltIcon,
   },
   {
     label: 'PI Direct Time',
     labelKorean: 'PI 직접 시간',
-    value: '1:1',
-    description: 'mentoring per fellow',
-    descriptionKorean: '맞춤 지도',
+    value: 'Weekly 1:1',
+    description: 'with the PI',
+    descriptionKorean: 'PI와 주 1회',
     icon: AcademicCapIcon,
   },
 ];
@@ -64,8 +64,8 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neuro-cyan opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-neuro-cyan"></span>
             </span>
-            <span>2026 Cohort — Aug 31 Deadline</span>
-            <span className="ml-2 korean text-white/60">2026년 모집 중 — 8월 31일 마감</span>
+            <span>2026 Cohort — Application Form Opens Late May, Aug 31 Deadline</span>
+            <span className="ml-2 korean text-white/60">2026년 모집 — 지원서 5월 말 오픈 · 8월 31일 마감</span>
           </motion.div>
 
           {/* Main Headlines */}
@@ -91,6 +91,16 @@ export function Hero() {
             >
               꿈은 구체적으로, 호기심은 끄지 않게, <span className="text-white">분야는 두 개 이상.</span>
             </motion.div>
+
+            {/* PI byline */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.45 }}
+              className="text-sm md:text-base text-gray-500 mt-6"
+            >
+              Led by Prof. Jiook Cha (차지욱 교수), Department of Psychology, Seoul National University
+            </motion.p>
           </div>
 
           {/* Description */}
@@ -170,8 +180,11 @@ export function Hero() {
       {/* Scroll Text Reveal Section */}
       <div className="w-full mt-32">
         <TextReveal className="container-max">
-          "We invest deeply in undergraduates whose questions don't fit a syllabus."
+          "This program is for undergraduates whose questions are not contained within a single syllabus."
         </TextReveal>
+        <p className="text-center korean text-gray-400 text-lg md:text-xl mt-8 max-w-3xl mx-auto px-4 leading-relaxed">
+          본 프로그램은 학과 커리큘럼으로 환원되지 않는 질문을 가진 학부생을 대상으로 합니다.
+        </p>
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ export function ApplicationFormSimple() {
 
           <div className="text-sm text-gray-600 space-y-2 mb-8">
             <p>
-              <span className="font-semibold">분량:</span> 800–1200자 (한국어 또는 영어).
+              <span className="font-semibold">분량:</span> 영어 800–1200 단어 또는 한국어 1500–2400자.
             </p>
             <p>
               <span className="font-semibold">제출 채널:</span> Google Form 1개. CV·추천서·GPA cutoff 없음.

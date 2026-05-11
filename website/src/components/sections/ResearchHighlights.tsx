@@ -4,35 +4,38 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BeakerIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
+// Note: BrainLM, Brain-JEPA, Brain Harmony are external-lab works (Yale van Dijk,
+// NUS Helen Zhou, etc.) that the lab studies and builds on, not works authored
+// by Connectome Lab. Framing reflects this distinction.
 const researchAreas = [
   {
     title: 'BrainLM',
     titleKorean: 'BrainLM',
-    subtitle: 'Foundation Model for fMRI',
-    subtitleKorean: 'fMRI용 Foundation Model',
+    subtitle: 'Foundation Model for fMRI (Yale)',
+    subtitleKorean: '기능적 자기공명영상(fMRI) 기초 모델 (Yale)',
     paper: 'ICLR 2024',
-    description: 'Transformer-based foundation model for brain activity recordings with autoregressive prediction capabilities.',
-    descriptionKorean: '자가회귀 예측 기능을 갖춘 뇌 활동 기록용 Transformer 기반 Foundation Model',
+    description: 'Transformer-based foundation model for brain activity recordings, trained with masked self-supervised pretraining on large fMRI datasets.',
+    descriptionKorean: '대규모 fMRI 데이터에 마스킹 자기지도학습으로 사전학습된 뇌 활동 기록용 Transformer 기반 기초 모델',
     color: 'from-blue-500 to-purple-600',
   },
   {
     title: 'Brain-JEPA',
     titleKorean: 'Brain-JEPA',
-    subtitle: 'Joint-Embedding Predictive Architecture',
-    subtitleKorean: '결합 임베딩 예측 아키텍처',
-    paper: 'NeurIPS 2024',
-    description: 'Self-supervised learning framework for multimodal brain representation learning.',
-    descriptionKorean: '멀티모달 뇌 표상 학습을 위한 자가지도학습 프레임워크',
+    subtitle: 'Joint-Embedding Predictive Architecture for fMRI (NUS)',
+    subtitleKorean: 'fMRI 동역학용 결합 임베딩 예측 아키텍처 (NUS)',
+    paper: 'NeurIPS 2024 Spotlight',
+    description: 'Self-supervised brain dynamics foundation model with gradient positioning and spatiotemporal masking, trained on fMRI time-series.',
+    descriptionKorean: 'fMRI 시계열에 대한 자기지도 뇌 동역학 기초 모델 (gradient positioning + spatiotemporal masking)',
     color: 'from-green-500 to-blue-500',
   },
   {
     title: 'Brain Harmony',
     titleKorean: 'Brain Harmony',
-    subtitle: 'Multimodal Integration',
-    subtitleKorean: '멀티모달 통합',
+    subtitle: 'Structure–Function Multimodal Integration',
+    subtitleKorean: '뇌 구조·기능 다중모달 통합',
     paper: 'NeurIPS 2025',
-    description: 'Unified framework for integrating structural and functional brain data.',
-    descriptionKorean: '구조적 및 기능적 뇌 데이터 통합을 위한 통합 프레임워크',
+    description: 'Unified framework integrating structural morphology and functional dynamics into compact 1D token representations of the brain.',
+    descriptionKorean: '뇌의 구조적 형태와 기능적 동역학을 단일 1D 토큰 표상으로 통합하는 프레임워크',
     color: 'from-purple-500 to-pink-500',
   },
 ];

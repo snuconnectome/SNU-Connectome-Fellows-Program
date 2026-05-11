@@ -4,7 +4,8 @@ import { ProgramOverview } from '@/components/sections/ProgramOverview';
 import { ResearchHighlights } from '@/components/sections/ResearchHighlights';
 import { MentorNetwork } from '@/components/sections/MentorNetwork';
 import { ProgramStats } from '@/components/sections/ProgramStats';
-import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
+// TestimonialsSection intentionally hidden until first cohort graduates (2027+).
+// Empty placeholder weakens credibility more than no section at all.
 import { NewsSection } from '@/components/sections/NewsSection';
 import { CTASection } from '@/components/sections/CTASection';
 
@@ -36,8 +37,7 @@ export default function HomePage() {
       {/* Mentor Network */}
       <MentorNetwork />
 
-      {/* Testimonials */}
-      <TestimonialsSection />
+      {/* Testimonials intentionally hidden — first cohort starts 2026, testimonials from 2027 onwards */}
 
       {/* Latest News */}
       <NewsSection />

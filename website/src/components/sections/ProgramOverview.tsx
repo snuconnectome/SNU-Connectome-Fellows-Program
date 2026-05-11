@@ -14,56 +14,56 @@ import {
 const features = [
   {
     icon: CurrencyDollarIcon,
-    title: 'Comprehensive Support',
-    titleKorean: '포괄적 지원',
-    description: '₩36.2M annual investment per fellow including monthly stipend, overseas conferences, research visits, AI resources, and personal NVIDIA DGX Spark.',
-    descriptionKorean: '펠로우당 연간 3,620만원 투자: 월 장학금, 해외 학회, 연구 방문, AI 리소스, 개인용 NVIDIA DGX Spark 포함',
-    highlights: ['₩12M Annual Stipend', 'AI Budget $225/month', 'NVIDIA DGX Spark'],
+    title: 'Financial and Research Support',
+    titleKorean: '재정·연구 지원',
+    description: '₩36.2M per fellow (Year 1): ₩12M monthly stipend + ₩10M overseas conference & lab visit budget + ₩7.2M AI tools (Claude Max + supplementary APIs) + ₩1M books + ₩6M one-time NVIDIA DGX Spark workstation.',
+    descriptionKorean: '펠로우 1인당 ₩36.2M (1년차): ₩12M 월 장학금 + ₩10M 해외 학회·연구 방문 예산 + ₩7.2M AI 도구 (Claude Max + 보조 API) + ₩1M 도서 + ₩6M NVIDIA DGX Spark 1대 (1회 지급).',
+    highlights: ['₩12M Annual Stipend', 'AI Tools ~$225/month', 'NVIDIA DGX Spark (1회)'],
     color: 'from-green-400 to-blue-500',
   },
   {
     icon: GlobeAltIcon,
-    title: 'World-Class Mentorship',
-    titleKorean: '세계적 멘토링',
-    description: 'Direct mentorship from leading researchers at Brookhaven National Lab, Princeton University, MIT, and Stanford.',
-    descriptionKorean: 'Brookhaven National Lab, Princeton 대학, MIT, Stanford의 최고 연구진으로부터 직접 멘토링',
-    highlights: ['BNL & Princeton Mentors', 'Monthly 1:1 Sessions', 'Research Lab Visits'],
+    title: 'Overseas Collaborative Mentorship',
+    titleKorean: '해외 협력 멘토링',
+    description: 'Active mentorship from researchers at Brookhaven National Laboratory (BNL) and Princeton University (Hasson Lab). Lab alumni network spans MIT EECS and Stanford.',
+    descriptionKorean: 'Brookhaven National Laboratory(BNL)와 Princeton(Hasson Lab) 연구자와 정기 멘토링. Lab alumni 네트워크는 MIT EECS·Stanford로 연결됩니다.',
+    highlights: ['BNL & Princeton (active)', 'Monthly 1:1 Sessions', 'MIT/Stanford alumni network'],
     color: 'from-purple-400 to-pink-500',
   },
   {
     icon: BeakerIcon,
     title: 'Foundation Model Research',
-    titleKorean: 'Foundation Model 연구',
-    description: 'Work on cutting-edge neuroscience foundation models including BrainLM, Brain-JEPA, and multimodal brain representation learning.',
-    descriptionKorean: 'BrainLM, Brain-JEPA, 멀티모달 뇌 표상 학습 등 최첨단 신경과학 Foundation Model 연구',
-    highlights: ['BrainLM (ICLR 2024)', 'Brain-JEPA (NeurIPS 2024)', 'Multimodal Learning'],
+    titleKorean: '기초 모델 연구',
+    description: 'Research and build on neuroscience foundation models: BrainLM (Yale, ICLR 2024), Brain-JEPA (NUS, NeurIPS 2024 Spotlight), Brain Harmony (NeurIPS 2025), and the lab\'s own SwiFT (Cha et al., NeurIPS 2023).',
+    descriptionKorean: '신경과학 기초 모델 연구·확장: BrainLM (Yale, ICLR 2024), Brain-JEPA (NUS, NeurIPS 2024 Spotlight), Brain Harmony (NeurIPS 2025), 본 lab의 SwiFT (Cha et al., NeurIPS 2023).',
+    highlights: ['Lab\'s own SwiFT (NeurIPS 2023)', 'Brain-JEPA Spotlight', 'fMRI Foundation Models'],
     color: 'from-yellow-400 to-orange-500',
   },
   {
     icon: UserGroupIcon,
     title: 'Direct PI Mentorship',
     titleKorean: 'PI 직접 지도',
-    description: 'Weekly 1:1 sessions with the PI. Intentionally small cohort — investment per fellow exceeds typical lab postdocs. No postdoc layer between you and the PI.',
-    descriptionKorean: 'PI와 주 1회 1:1 미팅. 의도적으로 작은 cohort — 한 명 당 투자가 일반 랩 박사후보다 큽니다. PI와의 사이에 박사후 layer가 없습니다.',
-    highlights: ['Weekly 1:1 with PI', 'Intentionally Small Cohort', 'No Postdoc Layer'],
+    description: 'Weekly 1:1 sessions with the PI (Prof. Jiook Cha / 차지욱 교수). Cohort capped at 3 fellows per year — PI weekly capacity enforces the small size; no postdoc layer between fellow and PI.',
+    descriptionKorean: 'PI(차지욱 교수)와 주 1회 1:1 미팅. 연 3명 cohort 제한 — PI의 주간 가용 시간이 cohort 규모를 제약하며, 펠로우와 PI 사이에 박사후 단계가 없습니다.',
+    highlights: ['Weekly 1:1 with PI', 'Cohort: 3 fellows/year', 'No Postdoc Layer'],
     color: 'from-blue-400 to-indigo-500',
   },
   {
     icon: ChartBarIcon,
     title: 'Career Development',
-    titleKorean: '커리어 개발',
-    description: 'Structured pathway to top-tier graduate programs and research positions with guaranteed international exposure.',
-    descriptionKorean: '최고 수준의 대학원 프로그램과 연구직으로의 체계적 경로, 보장된 국제적 노출',
-    highlights: ['PhD Placement Support', 'Research Publications', 'Conference Presentations'],
+    titleKorean: '졸업 후 진로 안내',
+    description: 'Funded ₩10M annual budget per fellow for overseas conferences and lab visits. Structured guidance for graduate-school applications and research-track placement.',
+    descriptionKorean: '펠로우 1인당 연 ₩10M 해외 학회·연구 방문 예산 (확보 분야). 대학원 진학 및 연구 진로 안내.',
+    highlights: ['₩10M Overseas Budget', 'PhD Application Support', 'Conference Presentations'],
     color: 'from-teal-400 to-green-500',
   },
   {
     icon: AcademicCapIcon,
-    title: 'Academic Excellence',
-    titleKorean: '학술적 우수성',
-    description: 'Rigorous curriculum combining theoretical foundations with hands-on research experience in state-of-the-art facilities.',
-    descriptionKorean: '최첨단 시설에서 이론적 기초와 실습 연구 경험을 결합한 엄격한 커리큘럼',
-    highlights: ['Weekly Lab Meetings', 'Quarterly Evaluations', 'Publication Goals'],
+    title: 'Curriculum and Research Training',
+    titleKorean: '교육 과정 및 연구 훈련',
+    description: 'Structured seminars on Foundation Models, fMRI methods, Bayesian statistics, and paper writing. Hands-on research with NVIDIA DGX Spark workstation per fellow plus shared SNU HPC cluster access.',
+    descriptionKorean: '기초 모델·fMRI 방법론·베이지안 통계·논문 작성 세미나. NVIDIA DGX Spark 1인 1대 + SNU HPC 클러스터 활용 연구 훈련.',
+    highlights: ['Weekly Lab Meetings', 'Quarterly Evaluations', 'Co-authorship Opportunities'],
     color: 'from-red-400 to-pink-500',
   },
 ];
@@ -102,12 +102,10 @@ export function ProgramOverview() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span className="gradient-text">Program Excellence</span>
+            <span className="gradient-text">Program Overview</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed korean">
-            최고 수준의 지원과 세계적 멘토링을 통해
-            <br />
-            차세대 신경과학 리더를 양성합니다
+            본 프로그램의 지원 항목과 운영 구조를 안내합니다.
           </p>
         </motion.div>
 

@@ -35,46 +35,46 @@ const stats = [
   },
   {
     icon: GlobeAltIcon,
-    label: 'International Network',
-    labelKorean: '국제 네트워크',
-    value: '4+',
-    subtitle: 'top institutions',
-    subtitleKorean: '최고 기관',
-    description: 'Princeton, MIT, Stanford, Brookhaven National Laboratory partnerships',
-    descriptionKorean: 'Princeton, MIT, Stanford, Brookhaven National Laboratory 파트너십',
+    label: 'Active Partner Institutions',
+    labelKorean: '현재 협력 기관',
+    value: '2',
+    subtitle: 'BNL + Princeton',
+    subtitleKorean: 'BNL + Princeton',
+    description: 'Active partnerships: Brookhaven National Laboratory and Princeton (Hasson Lab). Alumni network at MIT EECS and Stanford.',
+    descriptionKorean: '현재 협력: Brookhaven National Laboratory · Princeton(Hasson Lab). Alumni 네트워크는 MIT EECS·Stanford로 연결.',
     color: 'from-blue-400 to-indigo-500',
   },
   {
     icon: BeakerIcon,
-    label: 'Research Focus',
-    labelKorean: '연구 집중도',
-    value: '100%',
-    subtitle: 'Foundation Models',
-    subtitleKorean: 'Foundation Model',
-    description: 'Dedicated focus on neuroscience foundation models and brain-AI alignment',
-    descriptionKorean: '신경과학 Foundation Model 및 뇌-AI 정렬 연구 전념',
+    label: 'PI : Fellow Ratio',
+    labelKorean: 'PI : 펠로우 비율',
+    value: '1 : 3',
+    subtitle: 'cohort-capped',
+    subtitleKorean: 'cohort 제한',
+    description: 'Cohort capped at 3 fellows per year, set by PI weekly capacity. No postdoc layer between fellow and PI.',
+    descriptionKorean: '연 3명 cohort 제한 — PI 주간 가용 시간이 제약. 펠로우와 PI 사이 박사후 단계 없음.',
     color: 'from-yellow-400 to-orange-500',
   },
   {
     icon: AcademicCapIcon,
-    label: 'Publication Goal',
+    label: 'Publication Target',
     labelKorean: '논문 목표',
-    value: '2-3',
-    subtitle: 'papers/fellow',
-    subtitleKorean: '편/펠로우',
-    description: 'Target 2-3 high-impact publications per fellow during the program',
-    descriptionKorean: '프로그램 기간 중 펠로우당 고임팩트 논문 2-3편 목표',
+    value: 'Target 1–2',
+    subtitle: 'papers/fellow during program',
+    subtitleKorean: '프로그램 기간 중 1-2편 (목표)',
+    description: 'Target: co-authorship on 1–2 papers (workshop or conference) per fellow during the program. Definition of "high-impact" reported with first cohort outcomes.',
+    descriptionKorean: '목표: 펠로우 1인당 프로그램 기간 중 1-2편 논문 공저 (워크숍/학회). 고임팩트 정의는 첫 cohort outcomes와 함께 공개.',
     color: 'from-red-400 to-pink-500',
   },
   {
     icon: BookOpenIcon,
-    label: 'Success Rate',
-    labelKorean: '성공률',
-    value: '90%+',
-    subtitle: 'PhD placement',
-    subtitleKorean: '박사과정 진학',
-    description: 'Expected 90%+ placement rate in top-tier international PhD programs',
-    descriptionKorean: '최고 수준 국제 박사과정 90% 이상 진학률 기대',
+    label: 'PhD Placement (target)',
+    labelKorean: '박사과정 진학 목표',
+    value: 'Reported',
+    subtitle: 'from 2030 onwards',
+    subtitleKorean: '2030년부터 보고',
+    description: 'First cohort begins 2026; PhD placement outcomes will be reported transparently from 2030 (cohort graduation) onwards. Current SNU psychology BS → top-30 PhD baseline ≈ 25–35%.',
+    descriptionKorean: '첫 cohort는 2026년 시작. PhD 진학 outcomes는 2030년(cohort 졸업)부터 본 사이트에 투명하게 보고. SNU 심리학 학사→top-30 PhD 현 baseline은 약 25-35%.',
     color: 'from-teal-400 to-green-500',
   },
 ];
@@ -116,7 +116,7 @@ export function ProgramStats() {
             Program by the <span className="gradient-text">Numbers</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed korean">
-            숫자로 보는 프로그램의 탁월함
+            숫자로 보는 프로그램 운영
           </p>
         </motion.div>
 
@@ -188,10 +188,10 @@ export function ProgramStats() {
           className="text-center mt-16"
         >
           <p className="text-lg text-gray-600 mb-2">
-            These numbers represent our commitment to excellence
+            These figures are our public commitments. Each will be reported annually from 2027 onwards.
           </p>
           <p className="text-sm text-gray-500 korean mb-6">
-            이 수치들은 우수성에 대한 우리의 약속을 나타냅니다
+            위 수치는 본 프로그램의 공개 약속이며, 2027년부터 매년 본 사이트에 보고됩니다.
           </p>
           <div className="flex items-center justify-center space-x-4 text-sm text-gray-400">
             <span>Version 1.1</span>
