@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     default: 'SNU Connectome Fellows Program | 서울대학교 커넥톰 펠로우십',
     template: '%s | SNU Connectome Fellows',
   },
-  description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 서울대 Connectome Lab의 학부생 펠로우십 — 2026 cohort 모집 중 (8월 31일 마감). 이력서가 아니라 본인의 질문 한 가지를 봅니다.',
+  description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 서울대 Connectome Lab의 학부생 펠로우십 — 2026 cohort 모집 중 (6월 15일 마감). 이력서가 아니라 본인의 질문 한 가지를 봅니다.',
   keywords: [
     'SNU',
     'Seoul National University',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     url: 'https://www.connectomelab.com',
     siteName: 'SNU Connectome Fellows Program',
     title: 'SNU Connectome Fellows Program | 2026 Cohort 모집',
-    description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 학부생 펠로우십 — 2026년 8월 31일 마감.',
+    description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 학부생 펠로우십 — 2026년 6월 15일 마감.',
     images: [
       {
         url: '/og-image.png',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SNU Connectome Fellows Program | 2026 Cohort',
-    description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 2026년 8월 31일 마감.',
+    description: '꿈은 구체적으로, 호기심은 끄지 않게, 분야는 두 개 이상. 2026년 6월 15일 마감.',
     images: ['/og-image.png'],
   },
   robots: {

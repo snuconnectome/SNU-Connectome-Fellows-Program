@@ -64,8 +64,8 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neuro-cyan opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-neuro-cyan"></span>
             </span>
-            <span>2026 Cohort — Application Form Opens Late May, Aug 31 Deadline</span>
-            <span className="ml-2 korean text-white/60">2026년 모집 — 지원서 5월 말 오픈 · 8월 31일 마감</span>
+            <span>2026 Cohort — Applications Open · Jun 15 Deadline</span>
+            <span className="ml-2 korean text-white/60">2026년 모집 — 지원 접수 중 · 6월 15일 마감</span>
           </motion.div>
 
           {/* Main Headlines */}

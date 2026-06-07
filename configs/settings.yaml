@@ -7,14 +7,19 @@ program:
   year: 2026
   max_fellows: 1  # Phase 0 funding lock A1 (현 펀드 ₩53.2M = 1명). PI가 A2/A3 확보 시 갱신.
 
-# 2026 Cohort 모집 일정 (잠정, PI 확정 필요)
+# 2026 Cohort 모집 일정 (PI 확정 2026-06-07: 마감 6/15 + 2단계 구조)
 application:
   cohort_2026:
-    deadline_iso: "2026-08-31T23:59:00+09:00"
-    interview_window: "2026-09-01..2026-09-15"
-    program_start: "2027-03-02"
-    # TODO_PI_REPLACE: PI가 Google Form 작성 후 published URL 교체
-    google_form_url: "https://forms.gle/TODO_REPLACE_BEFORE_DEPLOY"
+    deadline_iso: "2026-06-15T23:59:00+09:00"   # 지원 마감 (PI 확정 2026-06-07)
+    interview_window: "2026-06-16..2026-06-30"   # 마감 후 30분 화상 면접 (잠정)
+    # 2단계 프로그램 구조 (PI 확정 2026-06-07):
+    #   Stage 1 — 방학 펠로우십: 7-8월 2개월 (여름 집중 과정)
+    #   Stage 2 — 정식 펠로우십: 통과 시 9월부터 1년
+    program_start: "2026-07-01"                  # Stage 1 방학 펠로우십 시작
+    summer_fellowship_window: "2026-07-01..2026-08-31"   # Stage 1 (2개월)
+    full_fellowship_window: "2026-09-01..2027-08-31"     # Stage 2 (통과 시 1년)
+    # TODO_PI_REPLACE: PI가 Notion form 생성 후 published URL 교체
+    notion_form_url: "https://notion.so/TODO_REPLACE_BEFORE_DEPLOY"
     # 모집 공고 배포 채널 (Day 1.5)
     distribution_channels:
       - "SNU eClass announcement"

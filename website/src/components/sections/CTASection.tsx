@@ -22,10 +22,10 @@ export function CTASection() {
 
           {/* Headlines */}
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Write one short essay. We read every one.
+            Write two short essays. We read every one.
           </h2>
           <p className="text-2xl md:text-3xl font-semibold mb-2 korean">
-            짧은 글 한 편을 써 주십시오. 한 편도 빠짐없이 읽겠습니다.
+            짧은 글 두 편을 써 주십시오. 한 편도 빠짐없이 읽겠습니다.
           </p>
 
           <p className="text-xl text-brain-light mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -62,9 +62,9 @@ export function CTASection() {
           {/* Additional Info */}
           <div className="mt-12 pt-8 border-t border-white/20">
             <p className="text-sm text-white/60">
-              Application deadline: August 31, 2026
+              Application deadline: June 15, 2026
               <span className="mx-2">•</span>
-              <span className="korean">지원 마감: 2026년 8월 31일</span>
+              <span className="korean">지원 마감: 2026년 6월 15일</span>
             </p>
           </div>
         </motion.div>

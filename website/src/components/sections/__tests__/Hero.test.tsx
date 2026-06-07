@@ -17,8 +17,8 @@ describe('Hero Component (2026 mission-aligned)', () => {
 
   it('renders 2026 cohort badge', () => {
     render(<Hero />);
-    expect(screen.getByText('2026 Cohort — Aug 31 Deadline')).toBeInTheDocument();
-    expect(screen.getByText('2026년 모집 중 — 8월 31일 마감')).toBeInTheDocument();
+    expect(screen.getByText('2026 Cohort — Applications Open · Jun 15 Deadline')).toBeInTheDocument();
+    expect(screen.getByText('2026년 모집 — 지원 접수 중 · 6월 15일 마감')).toBeInTheDocument();
   });
 
   it('renders anti-resume description (KR & EN)', () => {

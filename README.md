@@ -65,7 +65,7 @@
 
 ### 선발 기준
 
-- **제출 서류**: 800–1200자 (또는 영어 800–1200 단어) dream essay 1편을 Google Form으로 제출합니다. CV, 추천서, GPA, 영어 점수는 필수 제출 항목이 아니며 평가에 반영하지 않습니다. 합격 후 cohort 운영을 위해 선택적으로 GPA·연구경험·GitHub URL 등을 자기 공개할 수 있으나, 이는 채점과 무관합니다.
+- **제출 서류**: 짧은 에세이 2편(메인 600–900자 + 보조 300–500자, 영어는 상응 단어 수)을 Notion 폼으로 제출합니다. CV, 추천서, GPA, 영어 점수는 필수 제출 항목이 아니며 평가에 반영하지 않습니다. 합격 후 cohort 운영을 위해 선택적으로 GPA·연구경험·GitHub URL 등을 자기 공개할 수 있으나, 이는 채점과 무관합니다.
 
 평가는 다음 세 가지 자질로 이루어집니다:
 - **꿈**: 50세의 본인 모습을 한 장면으로 묘사할 수 있는가
@@ -327,6 +327,26 @@ llm_budget_per_student = {
 
 ---
 
+## 📡 Notion Mirroring
+
+광고문(Recruitment Posting) 본문은 두 개의 Notion 페이지에 미러링되어 운영됩니다. **두 surface 는 서로 다른 독자와 목적**을 위해 분리되어 있습니다.
+
+| 페이지 | 용도 | URL | 내용 |
+|--------|------|-----|------|
+| **Review** | 대학원생 피드백 라운드 (internal review) | [Notion Review](https://www.notion.so/36c41454561d809e8025fa104f1766c1) | v2 광고문 본문 + 7항목 review 체크리스트 + 피드백 안내 callout |
+| **Publishing** | 학부생 배포용 (public-facing surface) | [Notion Publishing](https://www.notion.so/36c41454561d8195869bfabffa330abe) | v3 광고문 본문만 (피드백 안내 없음) — 학생들이 직접 보는 페이지 |
+
+### Source of Truth
+- **v2 (review 페이지 기준)**: `docs/RECRUITMENT_POSTING.md`
+- **v3 candidate (publishing 페이지 기준)**: `docs/RECRUITMENT_POSTING_v3_draft.md`
+
+### 업데이트 방식
+- **Notion MCP integration** (`mcp__claude_ai_Notion__notion-update-page`) 또는 Notion API token 직접 호출.
+- 두 페이지 모두 **Notion native table block** 으로 변환되어 있으므로, cell 내부의 inline markdown bold(`**text**`)는 렌더링되지 않습니다. 강조가 필요한 항목은 **표 밖의 별도 line** 으로 처리해야 합니다.
+- Markdown source 와 Notion 사이의 sync 은 manual mirror 입니다(자동 동기화 없음). 본문 변경 시 양쪽 동기화 여부를 검토하세요.
+
+---
+
 ## 🚀 웹사이트 기술 스택
 
 ### Frontend Technology
@@ -372,7 +392,7 @@ npm run dev
 
 ### 지원 절차
 
-1. **Google Form 1개 제출**: 800–1200자 (또는 영어 800–1200 단어) dream essay + LLM disclosure
+1. **Notion 폼 1개 제출**: 에세이 2편(메인 600–900자 + 보조 300–500자) + LLM disclosure
 2. **서류 평가**: PI 직접 채점 (자질 3개: 꿈/호기심/유연성, 자질당 1–4점)
 3. **30분 화상 면접** (1차 통과자 대상): 에세이 elaboration + 즉석 도메인 합성 과제
 4. **최종 선발**: 최대 3명 (cohort cap, PI 주간 1:1 가용 시간 기반)
@@ -411,7 +431,7 @@ CV, 추천서, 영어 점수, GPA 서류는 평가에 반영하지 않으며 필
 
 ---
 
-*Last Updated: April 2026*  
+*Last Updated: May 2026 (광고문 v3 draft + Notion 미러링)*  
 *Version: 1.1 (mission-aligned recruitment)*  
 *© 2025 SNU Connectome Lab. All rights reserved.*
 

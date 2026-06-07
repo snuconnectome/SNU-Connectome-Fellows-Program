@@ -210,13 +210,13 @@ export function ProgramOverview() {
         >
           <div className="bg-gradient-brand rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">
-              Read the prompt. Write one essay.
+              Read the prompts. Write two essays.
             </h3>
             <p className="text-xl mb-2 korean">
-              프롬프트를 읽고, 한 편의 글을 써 주십시오.
+              프롬프트를 읽고, 두 편의 글을 써 주십시오.
             </p>
             <p className="text-brain-light mb-8 max-w-2xl mx-auto leading-relaxed">
-              800–1200 words on a single dream. No CV, no recommendation letters,
+              Two short essays — your dream and your curiosity. No CV, no recommendation letters,
               no GPA cutoff. We read every submission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

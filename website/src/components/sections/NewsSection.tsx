@@ -15,13 +15,13 @@ const news = [
     excerptKorean: 'SNU 커넥톰 펠로우십 프로그램이 신경과학 연구를 위한 포괄적 지원과 함께 공식 런칭',
   },
   {
-    title: 'Application Form Opens Late May 2026',
-    titleKorean: '지원서 5월 말 오픈 예정',
-    date: '2026-05-10',
+    title: 'Applications Open — Deadline June 15, 2026',
+    titleKorean: '지원 접수 중 — 6월 15일 마감',
+    date: '2026-06-07',
     category: 'Applications',
     categoryKorean: '지원',
-    excerpt: 'The 2026 cohort application form opens at the end of May 2026. One short essay (800–1200 words English / 1500–2400 자 Korean). No CV, no recommendation letters, no GPA cutoff. Deadline: August 31, 2026.',
-    excerptKorean: '2026 cohort 지원서는 5월 말 오픈됩니다. 영어 800–1200 단어 또는 한국어 1500–2400자 dream essay 1편. CV·추천서·GPA cutoff 없음. 마감: 2026년 8월 31일.',
+    excerpt: 'Applications for the 2026 cohort are open. Two short essays via a single Notion form (main 600–900 + sub 300–500 Korean characters; English equivalent). No CV, no recommendation letters, no GPA cutoff. Deadline: June 15, 2026.',
+    excerptKorean: '2026 cohort 지원을 받습니다. Notion 폼 1개로 짧은 글 두 편 (메인 600–900자 + 보조 300–500자, 영어는 상응 단어 수). CV·추천서·GPA cutoff 없음. 마감: 2026년 6월 15일.',
   },
   {
     title: 'BrainLM Research Collaboration',
