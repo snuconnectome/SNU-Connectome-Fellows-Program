@@ -1,3 +1,8 @@
+> ⚠️ **DEPRECATED (2026-06-07)** — 이 문서의 평가 기준·요구 서류(GPA·추천서·연구계획서·자기소개서 4항목·100점 만점)는 **구버전 정책**입니다.
+> 현행 ground truth: `CLAUDE.md` "Recruitment Logic" + `docs/RECRUITMENT_POSTING.md` (v2).
+> 현 정책 = 에세이 2편(메인 600–900자 + 보조 300–500자) only · Notion form · GPA/CV/추천서 미수집 · 자질 3개(꿈/호기심/유연성) 평가(점수제 아님).
+> 본문은 이력 보존용으로 남깁니다. 신규 작업 시 참조하지 마세요.
+
 # 📝 SNU Connectome Fellows Program 지원서
 
 ## Application Form

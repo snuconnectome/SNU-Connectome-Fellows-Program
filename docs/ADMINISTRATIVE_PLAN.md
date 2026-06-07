@@ -1,3 +1,7 @@
+> ⚠️ **부분 DEPRECATED (2026-06-07)** — 이 문서의 **평가 기준(§2.2 100점 만점·GPA 20점·영어 10점)**과 **선발 일정(1월 접수/2월 면접/3월 OT)**은 **구버전**입니다.
+> 현행: 자질 3개(꿈/호기심/유연성) 평가(점수제 아님) · 2026 일정(마감 6/15, 7-8월 방학 펠로우십, 통과 시 9월~1년). ground truth = `docs/RECRUITMENT_POSTING.md` (v2) + `configs/settings.yaml`.
+> **행정 절차·재정 운영 부분은 유효**합니다. 평가 기준·선발 일정만 무시하세요.
+
 # 📋 행정 및 재정 운영 계획
 
 ## Administrative and Financial Operations Plan
