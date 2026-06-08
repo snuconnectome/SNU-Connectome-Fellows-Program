@@ -3,7 +3,7 @@ import { ApplicationFormSimple as ApplicationForm } from '@/components/forms/App
 
 export const metadata: Metadata = {
   title: 'Apply | SNU Connectome Fellows 2026',
-  description: '짧은 글 두 편으로 지원합니다. 메인 600–900자 + 보조 300–500자. CV·추천서·GPA cutoff 없음. 2026년 6월 15일 마감.',
+  description: '짧은 글 두 편으로 지원합니다. 메인 600–900자 + 보조 300–500자. CV·성적표는 참고용 제출(채점 무관). 2026년 6월 15일 마감.',
   openGraph: {
     title: 'Apply to SNU Connectome Fellows | 2026 Cohort',
     description: '짧은 글 두 편으로 지원합니다. 메인 + 보조 에세이. 6월 15일 마감.',
@@ -25,9 +25,9 @@ export default function ApplyPage() {
           </p>
           <p className="text-xl text-brain-light max-w-3xl mx-auto leading-relaxed">
             A main essay (600–900 Korean characters) and a shorter one (300–500), English equivalent.
-            No CV, no recommendation letters, no GPA cutoff. We are looking for one
-            specific dream, one curiosity you cannot turn off, and a mind that connects
-            at least two disciplines.
+            No GPA cutoff. CV and transcript are collected for reference only, not scored.
+            We are looking for one specific dream, one curiosity you cannot turn off,
+            and a mind that connects at least two disciplines.
           </p>
         </div>
       </section>

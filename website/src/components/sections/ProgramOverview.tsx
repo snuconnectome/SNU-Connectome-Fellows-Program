@@ -16,9 +16,9 @@ const features = [
     icon: CurrencyDollarIcon,
     title: 'Everything You Need to Focus on Research',
     titleKorean: '연구에 몰입할 수 있는 모든 환경',
-    description: 'A research stipend so you can focus without financial worry, near-unlimited AI agent tokens, your own NVIDIA DGX Spark plus Lab GPU cluster, and a budget for international conferences and mentor lab visits.',
-    descriptionKorean: '생활 걱정 없이 연구에 집중할 수 있는 연구장려금, 사실상 제약 없는 AI 에이전트 토큰, 본인 전용 NVIDIA DGX Spark와 Lab GPU 클러스터, 그리고 해외 학회·멘토 연구실 방문 예산.',
-    highlights: ['연구 몰입 stipend', 'AI 에이전트 토큰', 'DGX Spark + GPU 클러스터'],
+    description: 'A ₩1M/month research stipend (paid through the 7–8월 summer fellowship too), lab-funded AI agent tokens, your own NVIDIA DGX Spark plus Lab GPU cluster, and a budget for international conferences and mentor lab visits.',
+    descriptionKorean: '월 100만원 연구장려금(방학 펠로우십 7~8월 기간에도 지급), lab이 부담하는 AI 에이전트 토큰, 본인 전용 NVIDIA DGX Spark와 Lab GPU 클러스터, 그리고 해외 학회·멘토 연구실 방문 예산.',
+    highlights: ['월 100만원 stipend', 'AI 에이전트 토큰', 'DGX Spark + GPU 클러스터'],
     color: 'from-green-400 to-blue-500',
   },
   {
@@ -216,8 +216,8 @@ export function ProgramOverview() {
               프롬프트를 읽고, 두 편의 글을 써 주십시오.
             </p>
             <p className="text-brain-light mb-8 max-w-2xl mx-auto leading-relaxed">
-              Two short essays — your dream and your curiosity. No CV, no recommendation letters,
-              no GPA cutoff. We read every submission.
+              Two short essays — your dream and your curiosity. No GPA cutoff; CV and transcript
+              are reference-only, not scored. We read every submission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

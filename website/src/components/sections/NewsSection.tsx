@@ -20,8 +20,8 @@ const news = [
     date: '2026-06-07',
     category: 'Applications',
     categoryKorean: '지원',
-    excerpt: 'Applications for the 2026 cohort are open. Two short essays via a single Notion form (main 600–900 + sub 300–500 Korean characters; English equivalent). No CV, no recommendation letters, no GPA cutoff. Deadline: June 15, 2026.',
-    excerptKorean: '2026 cohort 지원을 받습니다. Notion 폼 1개로 짧은 글 두 편 (메인 600–900자 + 보조 300–500자, 영어는 상응 단어 수). CV·추천서·GPA cutoff 없음. 마감: 2026년 6월 15일.',
+    excerpt: 'Applications for the 2026 cohort are open. Two short essays via a single Notion form (main 600–900 + sub 300–500 Korean characters; English equivalent). No GPA cutoff; CV and transcript are collected for reference only. Deadline: June 15, 2026.',
+    excerptKorean: '2026 cohort 지원을 받습니다. Notion 폼 1개로 짧은 글 두 편 (메인 600–900자 + 보조 300–500자, 영어는 상응 단어 수). GPA cutoff 없음, CV·성적표는 참고용으로 제출. 마감: 2026년 6월 15일.',
   },
   {
     title: 'BrainLM Research Collaboration',

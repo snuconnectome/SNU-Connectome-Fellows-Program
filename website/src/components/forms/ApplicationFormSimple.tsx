@@ -18,8 +18,8 @@ const ESSAY_MAIN_KR = `당신이 50세가 되었을 때, 본인의 연구가 세
 const ESSAY_MAIN_EN = `When you turn 50, what specific scene in the world do you hope your research will have changed? Describe that single scene, name the one hardest problem you must solve in the next five years to reach it, and one reason that problem remains unsolved today.`;
 
 // 보조 에세이 — 자질 ② 멈출 수 없는 호기심 (300–500자)
-const ESSAY_SUB_KR = `지난 12개월 동안, 학점이나 누군가의 지시와 무관하게 스스로 가장 깊이 파고든 주제 하나를 적어 주십시오. 무엇이 처음 당신을 붙잡았는지, 그리고 어디까지 — 어떤 자료를 찾고, 무엇을 직접 해보고, 어떤 막다른 길을 만났는지 — 파고들었는지 구체적으로 보여 주십시오.`;
-const ESSAY_SUB_EN = `Over the past 12 months, name one topic you pursued most deeply on your own — independent of grades or anyone's instruction. Show us what first caught you, and how far you went: what you sought out, what you tried yourself, and the dead ends you hit.`;
+const ESSAY_SUB_KR = `지난 12개월 동안, 학점이나 지시와 무관하게 당신을 계속 붙잡은 질문이나 호기심 하나를 적어 주십시오. 깊이 한 우물을 판 경험이든, 여러 분야를 오가며 떠나지 않은 궁금증이든 좋습니다. 무엇이 처음 당신을 끌었고, 그 호기심이 당신을 어디로 데려갔는지 보여 주십시오. (거창한 결과물이 아니라, 그 궁금증이 진짜였다는 흔적이면 충분합니다.)`;
+const ESSAY_SUB_EN = `Over the past 12 months, name one question or curiosity that kept hold of you — independent of grades or anyone's instruction. A deep dive into one thing, or a curiosity carried across several fields, are equally welcome. Show us what first caught you and where that curiosity took you. (Not a polished result — just a trace that it was real.)`;
 
 export function ApplicationFormSimple() {
   return (
@@ -60,7 +60,7 @@ export function ApplicationFormSimple() {
               <span className="font-semibold">분량:</span> 메인 600–900자 · 보조 300–500자 (한국어 기준, 영어는 상응하는 단어 수).
             </p>
             <p>
-              <span className="font-semibold">제출 채널:</span> Notion 폼 1개. 추천서·GPA cutoff 없음 (CV·GPA는 참고자료로만).
+              <span className="font-semibold">제출 채널:</span> Notion 폼 1개. CV·성적표 제출 (참고용, 채점 무관) · 추천서·영어 점수 불요.
             </p>
             <p>
               <span className="font-semibold">세 번째 자질(분야를 넘는 유연성)</span>은 서류가 아니라 30분 화상 면접의 즉석 도메인 합성 과제에서 확인합니다.

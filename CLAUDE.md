@@ -17,11 +17,11 @@ Development of a recruitment and management system for the SNU Connectome Fellow
 ## Recruitment Logic
 - **Selection Criteria**:
   - **Required**: 800–1200 word (or 1500–2400 자) dream essay submitted via Google Form. LLM disclosure honesty.
-  - **Not used in scoring (CV·GPA는 참고자료로만 활용)**: CV·GPA는 참고자료로만 보고 채점에는 미반영. Recommendation letters·English scores는 요구하지 않음 (PI directive 2026-06-07, Notion 정합).
+  - **Submitted but not scored (CV·성적표 제출받되 채점 미반영)**: CV·성적표는 **제출받되** 참고자료로만 보고 채점에는 미반영, 점수 cutoff 없음. Recommendation letters·English scores는 요구하지 않음 (PI directive 2026-06-08, all surfaces 정합).
   - **Optional self-disclosure** (no scoring weight, used only for cohort planning post-acceptance): GPA, GitHub URL, prior research experience.
   - **Primary Evaluation**: Dream, Urge to Know, Cross-domain Flexibility (via Essay).
 - **Program structure (PI 확정 2026-06-07)**: 2-stage — ① 방학 펠로우십 (2026년 7–8월, 2개월 집중 trial) → ② 통과 시 정식 펠로우십 (2026년 9월 ~ 2027년 8월, 1년). 지원 마감 **2026-06-15**.
-- **Investment**: ~₩36.2M per fellow (정식 펠로우십 = 통과 후 1년 기준; 방학 펠로우십 처우는 별도 안내) — ₩12M monthly stipend + ₩10M overseas budget + ₩7.2M AI tools + ₩1M books + ₩6M one-time NVIDIA DGX Spark.
+- **Investment**: ~₩36.2M per fellow (정식 펠로우십 = 통과 후 1년 기준; **방학 펠로우십 7-8월에도 월 100만원 stipend 동일 지급** — PI directive 2026-06-08) — ₩12M monthly stipend (월 100만원) + ₩10M overseas budget + ₩7.2M AI tools (lab 부담, bounded) + ₩1M books + ₩6M one-time NVIDIA DGX Spark. 광고문은 "사실상 제약 없는 토큰" 류 과장 금지(리뷰어 P0).
 - **Cohort Cap**: 3 fellows/year (set by PI weekly 1:1 capacity).
 - **Active Mentors**: BNL (Shinjae Yoo, David Keetae Park) + Princeton Hasson Lab. Alumni network: MIT EECS, Stanford.
 - **Key Research Areas**: Brain Foundation Models, Generative Brain Models, LLM-Brain Alignment.
