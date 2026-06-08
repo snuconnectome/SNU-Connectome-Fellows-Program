@@ -13,13 +13,13 @@ import {
 const stats = [
   {
     icon: CurrencyDollarIcon,
-    label: 'Annual Investment',
-    labelKorean: '연간 투자',
-    value: '₩36.2M',
+    label: 'Personal Compute',
+    labelKorean: '개인 컴퓨팅',
+    value: 'DGX Spark',
     subtitle: 'per fellow',
     subtitleKorean: '펠로우당',
-    description: 'Comprehensive support including stipend, equipment, and international opportunities',
-    descriptionKorean: '장학금, 장비, 국제 기회를 포함한 포괄적 지원',
+    description: 'Personal AI workstation + Lab GPU cluster — on top of a research stipend, AI agent tokens, and international opportunities',
+    descriptionKorean: '개인 AI 워크스테이션 + Lab GPU 클러스터 — 그 위에 연구장려금·AI 에이전트 토큰·국제 기회',
     color: 'from-green-400 to-blue-500',
   },
   {

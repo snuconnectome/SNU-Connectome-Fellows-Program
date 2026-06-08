@@ -14,11 +14,11 @@ import {
 const features = [
   {
     icon: CurrencyDollarIcon,
-    title: 'Financial and Research Support',
-    titleKorean: '재정·연구 지원',
-    description: '₩36.2M per fellow (Year 1): ₩12M monthly stipend + ₩10M overseas conference & lab visit budget + ₩7.2M AI tools (Claude Max + supplementary APIs) + ₩1M books + ₩6M one-time NVIDIA DGX Spark workstation.',
-    descriptionKorean: '펠로우 1인당 ₩36.2M (1년차): ₩12M 월 장학금 + ₩10M 해외 학회·연구 방문 예산 + ₩7.2M AI 도구 (Claude Max + 보조 API) + ₩1M 도서 + ₩6M NVIDIA DGX Spark 1대 (1회 지급).',
-    highlights: ['₩12M Annual Stipend', 'AI Tools ~$225/month', 'NVIDIA DGX Spark (1회)'],
+    title: 'Everything You Need to Focus on Research',
+    titleKorean: '연구에 몰입할 수 있는 모든 환경',
+    description: 'A research stipend so you can focus without financial worry, near-unlimited AI agent tokens, your own NVIDIA DGX Spark plus Lab GPU cluster, and a budget for international conferences and mentor lab visits.',
+    descriptionKorean: '생활 걱정 없이 연구에 집중할 수 있는 연구장려금, 사실상 제약 없는 AI 에이전트 토큰, 본인 전용 NVIDIA DGX Spark와 Lab GPU 클러스터, 그리고 해외 학회·멘토 연구실 방문 예산.',
+    highlights: ['연구 몰입 stipend', 'AI 에이전트 토큰', 'DGX Spark + GPU 클러스터'],
     color: 'from-green-400 to-blue-500',
   },
   {

@@ -17,7 +17,7 @@ Development of a recruitment and management system for the SNU Connectome Fellow
 ## Recruitment Logic
 - **Selection Criteria**:
   - **Required**: 800–1200 word (or 1500–2400 자) dream essay submitted via Google Form. LLM disclosure honesty.
-  - **Not required (and not used in scoring)**: CV, recommendation letters, English scores, GPA cutoff. The public site explicitly does not collect these.
+  - **Not used in scoring (CV·GPA는 참고자료로만 활용)**: CV·GPA는 참고자료로만 보고 채점에는 미반영. Recommendation letters·English scores는 요구하지 않음 (PI directive 2026-06-07, Notion 정합).
   - **Optional self-disclosure** (no scoring weight, used only for cohort planning post-acceptance): GPA, GitHub URL, prior research experience.
   - **Primary Evaluation**: Dream, Urge to Know, Cross-domain Flexibility (via Essay).
 - **Program structure (PI 확정 2026-06-07)**: 2-stage — ① 방학 펠로우십 (2026년 7–8월, 2개월 집중 trial) → ② 통과 시 정식 펠로우십 (2026년 9월 ~ 2027년 8월, 1년). 지원 마감 **2026-06-15**.

@@ -29,12 +29,12 @@ export function CTASection() {
           </p>
 
           <p className="text-xl text-brain-light mb-8 max-w-3xl mx-auto leading-relaxed">
-            We are not collecting resumes. We want to see one question of yours.
+            We don't evaluate you on your resume. We want to see one question of yours.
             <br />
             Applications are open for the 2026 cohort.
           </p>
           <p className="text-lg text-white/80 korean mb-12 max-w-2xl mx-auto leading-relaxed">
-            저희는 이력서를 모으지 않습니다. 본인의 질문 한 가지를 보고자 합니다.
+            저희는 이력서로 평가하지 않습니다. 본인의 질문 한 가지를 보고자 합니다.
             <br />
             2026년 cohort 지원을 받습니다.
           </p>

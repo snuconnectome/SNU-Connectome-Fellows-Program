@@ -23,13 +23,13 @@ describe('Hero Component (2026 mission-aligned)', () => {
 
   it('renders anti-resume description (KR & EN)', () => {
     render(<Hero />);
-    expect(screen.getByText(/We are not collecting resumes/)).toBeInTheDocument();
-    expect(screen.getByText(/저희는 이력서를 모으지 않습니다/)).toBeInTheDocument();
+    expect(screen.getByText(/We don't evaluate you on your resume/)).toBeInTheDocument();
+    expect(screen.getByText(/저희는 이력서로 평가하지 않습니다/)).toBeInTheDocument();
   });
 
   it('renders cohort stats with PI direct time', () => {
     render(<Hero />);
-    expect(screen.getByText('₩36.2M')).toBeInTheDocument();
+    expect(screen.getByText('DGX Spark')).toBeInTheDocument();
     expect(screen.getByText('1:1')).toBeInTheDocument();
     expect(screen.getByText('PI Direct Time')).toBeInTheDocument();
   });

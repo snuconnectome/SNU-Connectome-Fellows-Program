@@ -14,11 +14,11 @@ import { TextReveal } from '@/components/ui/TextReveal';
 
 const stats = [
   {
-    label: 'Per-Fellow Investment',
-    labelKorean: '펠로우당 투자',
-    value: '₩36.2M',
-    description: 'Year 1 total',
-    descriptionKorean: '1년차 총액',
+    label: 'Personal AI Workstation',
+    labelKorean: '개인 AI 워크스테이션',
+    value: 'DGX Spark',
+    description: '+ Lab GPU cluster',
+    descriptionKorean: '+ Lab GPU 클러스터',
     icon: CurrencyDollarIcon,
   },
   {
@@ -110,7 +110,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-4 leading-relaxed"
           >
-            We are not collecting resumes. We want to see one question of yours.
+            We don't evaluate you on your resume. We want to see one question of yours.
             It is fine if that question is still blurry — if you can describe
             the texture of the blur, that is enough.
           </motion.p>
@@ -121,7 +121,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.55 }}
             className="korean text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            저희는 이력서를 모으지 않습니다. 대신 본인의 질문 한 가지를 보고자 합니다.
+            저희는 이력서로 평가하지 않습니다. 대신 본인의 질문 한 가지를 보고자 합니다.
             그 질문이 아직 흐릿하더라도 괜찮습니다 — 흐릿함의 결을 묘사할 수 있다면 그것으로 충분합니다.
           </motion.p>
 

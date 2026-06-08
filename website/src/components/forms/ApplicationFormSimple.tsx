@@ -60,7 +60,7 @@ export function ApplicationFormSimple() {
               <span className="font-semibold">분량:</span> 메인 600–900자 · 보조 300–500자 (한국어 기준, 영어는 상응하는 단어 수).
             </p>
             <p>
-              <span className="font-semibold">제출 채널:</span> Notion 폼 1개. CV·추천서·GPA cutoff 없음.
+              <span className="font-semibold">제출 채널:</span> Notion 폼 1개. 추천서·GPA cutoff 없음 (CV·GPA는 참고자료로만).
             </p>
             <p>
               <span className="font-semibold">세 번째 자질(분야를 넘는 유연성)</span>은 서류가 아니라 30분 화상 면접의 즉석 도메인 합성 과제에서 확인합니다.
