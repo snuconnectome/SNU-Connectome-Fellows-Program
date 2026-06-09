@@ -20,9 +20,9 @@ Princeton)와의 직접 협업을 제공합니다.
 
 펠로우는 세 가지 **Brain Foundation Model** 트랙 중 하나에서 출발합니다:
 
-- **① fMRI Foundation Model** — UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다. *(Lab: NeuroMamba · Scalable Diffusion 4D fMRI · SwiFT V2 · MBBN)*
-- **② Ephys Foundation Model** — 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다. *(Lab: DIVER-1 · EEG×DIVER · LBM×Qualia)*
-- **③ Continuous Neural Field** — 격자를 넘어 좌표에서 곧바로 뇌 활동으로. 스케일·종·양식을 하나의 연속 함수로 묶습니다. *(Lab: OmniField, ICLR 2026 · Mamba-GINR · STACI)*
+- **① fMRI Foundation Model** — *뇌 활동만 보고 지금 이 사람이 어떤 인지·정서 상태인지 읽어낼 수 있을까?* UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다. *(Lab: NeuroMamba · Scalable Diffusion 4D fMRI · SwiFT V2 · MBBN)*
+- **② Ephys Foundation Model** — *신경 회로가 지금 학습 중인지, 결정 중인지를 신호만으로 읽을 수 있을까?* 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다. *(Lab: DIVER-1 · EEG×DIVER · LBM×Qualia)*
+- **③ Continuous Neural Field** — *측정 양식이 제각각인 마우스 뉴런과 인간 fMRI를, 하나의 연속 함수로 다룰 수 있을까?* 격자를 넘어 좌표에서 곧바로 뇌 활동으로 — 스케일·종·양식을 하나로 묶습니다. *(Lab: OmniField, ICLR 2026 · Mamba-GINR · STACI)*
 
 그리고 진짜 목표는 이 셋을 **한데 합치는 것**입니다. 각 Foundation Model을 도구처럼 꺼내 쓰는 **LLM 에이전트**가 뇌 상태를 추론하고(Brain-State Chain-of-Thought), 스스로 **가설을 세우고 → 실험을 설계·분석하고 → 과거의 발견을 재현**하는 **자율 과학 시스템(AI Scientist for Brain)** — 우리가 지금 만들고 있는 **compound AI / agentic AI**입니다. 각 트랙의 brain FM은 이 시스템의 부품이 됩니다.
 
