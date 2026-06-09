@@ -14,12 +14,22 @@
 
 ## 무엇을 함께 하는가
 
-뇌 활동의 보편 패턴을 학습하는 **Brain Foundation Models**(BrainLM, Brain-JEPA, Brain Harmony), 생성 모델로 뇌 데이터를 모델링하는 **Generative Brain Models**, 그리고 대규모 언어 모델과 인간 뇌 표상을 정렬하는 **LLM-Brain Alignment** — 이 세 흐름이 펠로우의 출발점입니다. 펠로우는 본인의 관심에 따라 멘토와 협의하여 구체적인 과제를 설정합니다.
+우리의 목표는 한 문장입니다 — **뇌를 언어처럼 읽고, 스스로 연구하는 AI를 만드는 것.**
+
+펠로우는 세 가지 **Brain Foundation Model** 트랙 중 하나에서 출발합니다:
+
+- **① fMRI Foundation Model** — UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다. *(Lab: NeuroMamba · Scalable Diffusion 4D fMRI · SwiFT V2 · MBBN)*
+- **② Ephys Foundation Model** — 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다. *(Lab: DIVER-1 · EEG×DIVER · LBM×Qualia)*
+- **③ Continuous Neural Field** — 격자를 넘어 좌표에서 곧바로 뇌 활동으로. 스케일·종·양식을 하나의 연속 함수로 묶습니다. *(Lab: OmniField, ICLR 2026 · Mamba-GINR · STACI)*
+
+그리고 진짜 목표는 이 셋을 **한데 합치는 것**입니다. 각 Foundation Model을 도구처럼 꺼내 쓰는 **LLM 에이전트**가 뇌 상태를 추론하고(Brain-State Chain-of-Thought), 스스로 **가설을 세우고 → 실험을 설계·분석하고 → 과거의 발견을 재현**하는 **자율 과학 시스템(AI Scientist for Brain)** — 우리가 지금 만들고 있는 **compound AI / agentic AI**입니다. 각 트랙의 brain FM은 이 시스템의 부품이 됩니다.
+
+펠로우는 본인의 관심에 따라 한 트랙의 Foundation Model을 깊이 파거나, 이들을 잇는 에이전트 시스템을 함께 설계합니다.
 
 연구 환경:
 
 - **컴퓨팅** — 개인용 NVIDIA DGX Spark 1대(₩600만원 초기 투자) + Lab의 DGX A100/H100 GPU 클러스터
-- **AI 도구** — Claude Opus / GPT-5 / Gemini API + Cursor Pro·Claude Code 충분히 사용
+- **AI 도구** — Claude Code · Antigravity CLI · Codex 등 AI 코딩 에이전트를 **월 10억 토큰 이상** 규모로, 토큰 비용을 의식하지 않고 사용 (lab 전액 부담)
 - **데이터** — UK Biobank(50,000명 fMRI), HCP(Human Connectome Project), Narratives, NSD(Natural Scenes Dataset)
 
 **시간 투입** — 학기 중 주당 20–30시간, 여름 방학 풀타임 (해외 멘토 연구실 4주 방문 포함).
@@ -37,8 +47,8 @@
 ### ① 꿈 — 50세의 본인 모습이 한 장면으로 떠오르는가
 당신의 연구가 세상의 어떤 구체적인 장면을 바꾸어 놓았기를 바라는지, 그 한 컷을 묘사할 수 있어야 합니다.
 
-### ② 멈출 수 없는 호기심 — 스스로 끄지 않고 따라간 주제가 있는가
-한 학기든 1년이든, **시간보다 깊이**가 중요합니다. 학점이나 누군가의 지시 없이 스스로 가장 깊이 파고든 주제 하나가 있다면 됩니다.
+### ② 멈출 수 없는 호기심 — 스스로 끄지 않고 따라간 호기심이 있는가
+학점이나 지시 없이 끄지 않고 따라간 호기심이 하나라도 있다면 됩니다. **한 우물을 깊이 파든, 여러 분야를 오가든 좋습니다.**
 
 ### ③ 분야를 넘는 유연성 — 본인 전공 밖 두 개념을 합쳐 새 질문을 만들 수 있는가
 이 자질은 서류가 아니라 **30분 화상 면접의 즉석 합성 과제**로 확인합니다.

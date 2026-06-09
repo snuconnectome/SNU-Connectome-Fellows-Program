@@ -16,14 +16,22 @@ Princeton)와의 직접 협업을 제공합니다.
 
 ## 무엇을 함께 하는가
 
-뇌의 활동을 보편 표상으로 학습하는 **Brain Foundation Models**(BrainLM, Brain-JEPA, Brain Harmony),
-생성 모델과 결합한 뇌 데이터 모델, 그리고 대규모 언어 모델과 인간 뇌 표상을 정렬하는 **LLM-Brain Alignment**
-— 이 세 흐름이 펠로우의 출발점입니다. 펠로우는 본인의 관심에 따라 멘토와 협의하여 구체적인 과제를 설정합니다.
+우리의 목표는 한 문장입니다 — **뇌를 언어처럼 읽고, 스스로 연구하는 AI를 만드는 것.**
+
+펠로우는 세 가지 **Brain Foundation Model** 트랙 중 하나에서 출발합니다:
+
+- **① fMRI Foundation Model** — UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다. *(Lab: NeuroMamba · Scalable Diffusion 4D fMRI · SwiFT V2 · MBBN)*
+- **② Ephys Foundation Model** — 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다. *(Lab: DIVER-1 · EEG×DIVER · LBM×Qualia)*
+- **③ Continuous Neural Field** — 격자를 넘어 좌표에서 곧바로 뇌 활동으로. 스케일·종·양식을 하나의 연속 함수로 묶습니다. *(Lab: OmniField, ICLR 2026 · Mamba-GINR · STACI)*
+
+그리고 진짜 목표는 이 셋을 **한데 합치는 것**입니다. 각 Foundation Model을 도구처럼 꺼내 쓰는 **LLM 에이전트**가 뇌 상태를 추론하고(Brain-State Chain-of-Thought), 스스로 **가설을 세우고 → 실험을 설계·분석하고 → 과거의 발견을 재현**하는 **자율 과학 시스템(AI Scientist for Brain)** — 우리가 지금 만들고 있는 **compound AI / agentic AI**입니다. 각 트랙의 brain FM은 이 시스템의 부품이 됩니다.
+
+펠로우는 본인의 관심에 따라 한 트랙의 Foundation Model을 깊이 파거나, 이들을 잇는 에이전트 시스템을 함께 설계합니다.
 
 연구 환경:
 
 - **컴퓨팅** — 개인용 NVIDIA DGX Spark 1대(₩600만원 초기 투자) + Lab DGX A100/H100 클러스터
-- **AI 도구** — Claude Opus / GPT-5 / Gemini API + Cursor Pro·Claude Code 충분히 사용
+- **AI 도구** — Claude Code · Antigravity CLI · Codex 등 AI 코딩 에이전트를 **월 10억 토큰 이상** 규모로, 토큰 비용을 의식하지 않고 사용 (lab 전액 부담)
 - **데이터** — UK Biobank (50,000명 fMRI), HCP, Narratives, NSD
 
 ---
