@@ -31,8 +31,16 @@
 
 ---
 
+## ④ NeuroX 컨소시움 — AI Scientist for Brain
+
+![NeuroX 컨소시움 — 여러 Brain Foundation Model을 도구로 묶어 스스로 가설·실험·재현을 수행하는 자율 AI 과학자를, 6개 기관 50여 명의 융합팀이 함께 구축하는 그림](../assets/T4_neurox_consortium_var1.png)
+
+**NeuroX 컨소시움 (AI Scientist for Brain)** — 여러 종류의 Brain Foundation Model을 도구처럼 하나로 묶어, 스스로 가설 → 실험 → 재현(논문)을 수행하는 자율 **뇌과학 AI 과학자**를 만드는 것이 목표입니다. 서울대학교(차지욱 교수 총괄)를 중심으로 성균관대 · 한양대 · 한국뇌연구원(KBRI) · 서울대병원 + 미국 브룩헤이븐 국립연구소(BNL)의 **50여 명** 융합팀이, 뇌 연구의 3대 난제인 **재현성 · 인과성 · 개인차**를 함께 돌파합니다. 그 결과 ADHD·자폐·치매를 증상 **3~5년 전** 조기 선별하고, 우울증 등 환자에게 맞춘 정밀 뇌 자극 치료가 가능해집니다.
+
+---
+
 ### 생성 메타데이터
 - **모델**: nanobanana2 (Gemini Flash Image Preview, `gemini-3.1-flash-image-preview`), 4K 16:9, thinking HIGH
 - **테마**: snu_neurox (SNU Blue #003380 · Signal Orange #E69F00 · Neural Teal #0072B2 · Okabe-Ito 색맹 안전 팔레트)
 - **스타일**: visual-first (개념을 다이어그램·메타포로 인코딩, 텍스트 카드 지양)
-- **프롬프트 원본**: `assets/prompts_v2/T1_brainfm_prompt.md` · `T2_neuralfield_prompt.md` · `T3_aiscientist_prompt.md`
+- **프롬프트 원본**: `assets/prompts_v2/T1_brainfm_prompt.md` · `T2_neuralfield_prompt.md` · `T3_aiscientist_prompt.md` · `T4_neurox_consortium_prompt.md`
