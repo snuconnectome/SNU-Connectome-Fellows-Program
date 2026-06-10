@@ -13,24 +13,6 @@ import {
 
 const features = [
   {
-    icon: CurrencyDollarIcon,
-    title: 'Everything You Need to Focus on Research',
-    titleKorean: '연구에 몰입할 수 있는 모든 환경',
-    description: 'A ₩1M/month research stipend (paid through the 7–8월 summer fellowship too), 1B+ AI agent tokens per month via Claude Code · Antigravity CLI · Codex (lab-funded, use without watching the meter), your own NVIDIA DGX Spark plus Lab GPU cluster, and a budget for international conferences and mentor lab visits.',
-    descriptionKorean: '월 100만원 연구장려금(방학 펠로우십 7~8월 기간에도 지급), Claude Code·Antigravity CLI·Codex로 월 10억 토큰 이상 — 토큰 비용 의식 없이 사용(lab 전액 부담), 본인 전용 NVIDIA DGX Spark와 Lab GPU 클러스터, 그리고 해외 학회·멘토 연구실 방문 예산.',
-    highlights: ['월 100만원 stipend', '월 10억+ AI 토큰', 'DGX Spark + GPU 클러스터'],
-    color: 'from-green-400 to-blue-500',
-  },
-  {
-    icon: GlobeAltIcon,
-    title: 'Overseas Collaborative Mentorship',
-    titleKorean: '해외 협력 멘토링',
-    description: 'Active mentorship from researchers at Brookhaven National Laboratory (BNL) and Princeton University (Hasson Lab). Lab alumni network spans MIT EECS and Stanford.',
-    descriptionKorean: 'Brookhaven National Laboratory(BNL)와 Princeton(Hasson Lab) 연구자와 정기 멘토링. Lab alumni 네트워크는 MIT EECS·Stanford로 연결됩니다.',
-    highlights: ['BNL & Princeton (active)', 'Monthly 1:1 Sessions', 'MIT/Stanford alumni network'],
-    color: 'from-purple-400 to-pink-500',
-  },
-  {
     icon: BeakerIcon,
     title: 'Foundation Model Research',
     titleKorean: '기초 모델 연구',
@@ -49,13 +31,13 @@ const features = [
     color: 'from-blue-400 to-indigo-500',
   },
   {
-    icon: ChartBarIcon,
-    title: 'Career Development',
-    titleKorean: '졸업 후 진로 안내',
-    description: 'Funded ₩10M annual budget per fellow for overseas conferences and lab visits. Structured guidance for graduate-school applications and research-track placement.',
-    descriptionKorean: '펠로우 1인당 연 ₩10M 해외 학회·연구 방문 예산 (확보 분야). 대학원 진학 및 연구 진로 안내.',
-    highlights: ['₩10M Overseas Budget', 'PhD Application Support', 'Conference Presentations'],
-    color: 'from-teal-400 to-green-500',
+    icon: GlobeAltIcon,
+    title: 'Overseas Collaborative Mentorship',
+    titleKorean: '해외 협력 멘토링',
+    description: 'Active mentorship from researchers at Brookhaven National Laboratory (BNL) and Princeton University (Hasson Lab). Lab alumni network spans MIT EECS and Stanford.',
+    descriptionKorean: 'Brookhaven National Laboratory(BNL)와 Princeton(Hasson Lab) 연구자와 정기 멘토링. Lab alumni 네트워크는 MIT EECS·Stanford로 연결됩니다.',
+    highlights: ['BNL & Princeton (active)', 'Monthly 1:1 Sessions', 'MIT/Stanford alumni network'],
+    color: 'from-purple-400 to-pink-500',
   },
   {
     icon: AcademicCapIcon,
@@ -65,6 +47,24 @@ const features = [
     descriptionKorean: '기초 모델·fMRI 방법론·베이지안 통계·논문 작성 세미나. NVIDIA DGX Spark 1인 1대 + SNU HPC 클러스터 활용 연구 훈련.',
     highlights: ['Weekly Lab Meetings', 'Quarterly Evaluations', 'Co-authorship Opportunities'],
     color: 'from-red-400 to-pink-500',
+  },
+  {
+    icon: ChartBarIcon,
+    title: 'Career Development',
+    titleKorean: '졸업 후 진로 안내',
+    description: 'Funded ₩10M annual budget per fellow for overseas conferences and lab visits. Structured guidance for graduate-school applications and research-track placement.',
+    descriptionKorean: '펠로우 1인당 연 ₩10M 해외 학회·연구 방문 예산 (확보 분야). 대학원 진학 및 연구 진로 안내.',
+    highlights: ['₩10M Overseas Budget', 'PhD Application Support', 'Conference Presentations'],
+    color: 'from-teal-400 to-green-500',
+  },
+  {
+    icon: CurrencyDollarIcon,
+    title: 'Everything You Need to Focus on Research',
+    titleKorean: '연구에 몰입할 수 있는 모든 환경',
+    description: 'A ₩1M/month research stipend (paid through the summer fellowship too), 1B+ AI agent tokens per month via Claude Code · Antigravity CLI · Codex for building agents and running experiments (lab-funded, use without watching the meter), your own NVIDIA DGX Spark plus Lab GPU cluster, and a budget for international conferences and mentor lab visits.',
+    descriptionKorean: '월 100만원 연구장려금(방학 펠로우십 기간에도 지급), Claude Code·Antigravity CLI·Codex로 월 10억 토큰 — 에이전트 구축·실험에 토큰 비용 의식 없이 사용(lab 전액 부담), 본인 전용 NVIDIA DGX Spark와 Lab GPU 클러스터, 그리고 해외 학회·멘토 연구실 방문 예산.',
+    highlights: ['월 100만원 stipend', '월 10억+ AI 토큰', 'DGX Spark + GPU 클러스터'],
+    color: 'from-green-400 to-blue-500',
   },
 ];
 

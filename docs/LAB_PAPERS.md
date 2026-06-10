@@ -18,7 +18,7 @@
 > **연구 질문** — *신경 회로가 지금 학습 중인지, 결정 중인지, 무엇에 반응하는지 신호로 읽을 수 있는가?*
 > 밀리초 단위 신경 신호(spike · LFP · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합.
 
-1. Han, D. D. *et al.* **DIVER-1: Deep Integration of Vast Electrophysiological Recordings at Scale.** *arXiv*:2512.19097 (Lab preprint).
+1. Han, D. D. *et al.* **DIVER-1: Scaling Intracranial EEG Foundation Models for Transferable Representations.** *arXiv*:2512.19097 (Lab preprint).
 2. Connectome Lab. **EEG Memory × DIVER: Theta-Rhythmic Episodic Memory Encoding.** (under review).
 3. Connectome Lab. **LBM × Qualia: iEEG Foundation Models meet Phenomenal States.** (in preparation, ICLR 2027 목표).
 
@@ -43,5 +43,5 @@
 - [ ] NeuroMamba / Scalable Diffusion: NeurIPS *FM for Brain & Body* Workshop **연도** (2024 vs 2025)
 - [ ] MBBN: arXiv 번호
 - [ ] SwiFT V2: 공개 시 arXiv/링크
-- [ ] DIVER-1 (arXiv:2512.19097) · OmniField (arXiv:2511.02205): 번호 실체 재확인
+- [x] DIVER-1 (arXiv:2512.19097): 제목·번호 arXiv 원문 검증 완료 (2026-06-09) — 제목 = "Scaling Intracranial EEG Foundation Models for Transferable Representations" (이전 백크로님 오류 교정). OmniField (arXiv:2511.02205) 번호 확인 완료.
 - [ ] Mamba-GINR / STACI: NeurIPS Workshop 연도·링크

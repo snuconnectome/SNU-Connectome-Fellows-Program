@@ -71,3 +71,7 @@ node_modules/
 
 
 
+
+# Coverage / Cursor tooling
+.coverage
+.cursor/

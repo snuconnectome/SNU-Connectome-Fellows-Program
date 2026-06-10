@@ -35,7 +35,7 @@ fMRI 가 "초 단위" 거시 뇌 활동을 본다면, **electrophysiology(ephys)
 
 **Lab publications & Ongoing preprints**
 
-- **DIVER-1**: Deep Integration of Vast Electrophysiological Recordings at Scale
+- **DIVER-1**: Scaling Intracranial EEG Foundation Models for Transferable Representations
   DD. Han et al. — arXiv:2512.19097 (Lab-led preprint)
 - **EEG Memory × DIVER**: Theta-Rhythmic Episodic Memory Encoding (Lab work under review)
 - **LBM × Qualia**: iEEG Foundation Models meet Phenomenal States (Lab work, in preparation for ICLR 2027 submission)

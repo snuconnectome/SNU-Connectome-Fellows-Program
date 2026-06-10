@@ -8,9 +8,6 @@
 **2026 Phase 0 cohort 1명 확정** (추가 펀드 확보 시 최대 3명까지 확대 예정). 프로그램은 두 단계로 운영됩니다
 — 먼저 **여름 방학 7~8월 두 달간 방학 펠로우십**으로 연구에 몰입하고, 이 기간의 작업과 적합성을 함께 확인한 뒤
 **통과하면 9월부터 1년간 정식 펠로우십**으로 이어집니다. 학기가 끝나자마자 곧바로 본격 연구에 진입합니다.
-한 명의 학부생에게 **월 100만원 연구장려금**(방학 펠로우십 기간 포함) 위에 격주 **1:1 PI 멘토링**, **연구에 필요한 AI 에이전트 토큰**(lab 부담),
-**본인 전용 컴퓨팅 자원**(개인 DGX Spark + Lab GPU 클러스터), 그리고 국제 멘토 네트워크(Brookhaven National Lab,
-Princeton)와의 직접 협업을 제공합니다.
 
 ---
 
@@ -20,9 +17,24 @@ Princeton)와의 직접 협업을 제공합니다.
 
 펠로우는 세 가지 **Brain Foundation Model** 트랙 중 하나에서 출발합니다:
 
-- **① fMRI Foundation Model** — *뇌 활동만 보고 지금 이 사람이 어떤 인지·정서 상태인지 읽어낼 수 있을까?* UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다. *(Lab: NeuroMamba · Scalable Diffusion 4D fMRI · SwiFT V2 · MBBN)*
-- **② Ephys Foundation Model** — *신경 회로가 지금 학습 중인지, 결정 중인지를 신호만으로 읽을 수 있을까?* 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다. *(Lab: DIVER-1 · EEG×DIVER · LBM×Qualia)*
-- **③ Continuous Neural Field** — *측정 양식이 제각각인 마우스 뉴런과 인간 fMRI를, 하나의 연속 함수로 다룰 수 있을까?* 격자를 넘어 좌표에서 곧바로 뇌 활동으로 — 스케일·종·양식을 하나로 묶습니다. *(Lab: OmniField, ICLR 2026 · Mamba-GINR · STACI)*
+**① fMRI Foundation Model** — *뇌 활동만 보고 지금 이 사람이 어떤 인지·정서 상태인지 읽어낼 수 있을까?* UK Biobank 5만 명 규모의 뇌 활동에서 일반화 가능한 표상을 학습합니다.
+
+- **NeuroMamba**: A State-Space Foundation Model for Functional MRI — Choi, Park, Kwon, Yoo, Cha *(NeurIPS FM for the Brain & Body Workshop)*
+- **Scalable Diffusion Transformer** for Conditional 4D fMRI Synthesis — Seo, Park, Yoo, Cha *(NeurIPS Workshop)*
+- **SwiFT V2**: Towards Large-scale Brain Foundation Model *(ongoing)*
+- **MBBN**: Learning Brain Dynamics across Distinct Scaling Regimes *(arXiv)*
+
+**② Ephys Foundation Model** — *신경 회로가 지금 학습 중인지, 결정 중인지를 신호만으로 읽을 수 있을까?* 밀리초 단위 신경 신호(spike · EEG · iEEG)를 여러 종에 걸쳐 하나로 통합합니다.
+
+- **DIVER-1**: Scaling Intracranial EEG Foundation Models for Transferable Representations — Han et al. *([arXiv:2512.19097](https://arxiv.org/abs/2512.19097))*
+- **EEG Memory × DIVER**: Theta-Rhythmic Episodic Memory Encoding *(under review)*
+- **LBM × Qualia**: iEEG Foundation Models meet Phenomenal States *(in preparation, ICLR 2027)*
+
+**③ Continuous Neural Field** — *측정 양식이 제각각인 마우스 뉴런과 인간 fMRI를, 하나의 연속 함수로 다룰 수 있을까?* 격자를 넘어 좌표에서 곧바로 뇌 활동으로 — 스케일·종·양식을 하나로 묶습니다. *(David Keetae Park 리드)*
+
+- **OmniField**: Conditioned Neural Fields for Robust Multimodal Spatiotemporal Learning — Valencia, Balasooriya, Luo, Yoo, Park *(ICLR 2026; [arXiv:2511.02205](https://arxiv.org/abs/2511.02205))*
+- **Mamba-GINR**: A Scalable Framework for Spatiotemporal Representation of fMRI — Balasooriya, Choi, Valencia, Luo, Yoo, Park *(NeurIPS 2025 Workshop)*
+- **STACI**: Spatio-Temporal Aleatoric Conformal Inference — Feng, Park, Luo, Urdangarin, Yoo, Reich *(NeurIPS)*
 
 그리고 진짜 목표는 이 셋을 **한데 합치는 것**입니다. 각 Foundation Model을 도구처럼 꺼내 쓰는 **LLM 에이전트**가 뇌 상태를 추론하고(Brain-State Chain-of-Thought), 스스로 **가설을 세우고 → 실험을 설계·분석하고 → 과거의 발견을 재현**하는 **자율 과학 시스템(AI Scientist for Brain)** — 우리가 지금 만들고 있는 **compound AI / agentic AI**입니다. 각 트랙의 brain FM은 이 시스템의 부품이 됩니다.
 

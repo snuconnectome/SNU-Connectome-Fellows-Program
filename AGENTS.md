@@ -112,4 +112,23 @@ SNU-Connectome-Fellows-Program/
 
 ---
 
-*Last updated: 2026-05-27 (광고문 v3 draft + Notion 미러링 + Trinity review 2026-05-26 통합)*
+## Learned User Preferences
+
+- 광고문은 mission·정체성으로 시작하고 stipend·perks 는 맨 아래로 — perks-first 는 "talent 부족·desperate" 신호로 읽혀 우수 지원자 self-selection 을 왜곡. v2·v3·website `ProgramOverview` 카드 전반에 적용된 PI 선호.
+- 광고문/평가 문구는 일상어보다 rigorous·학술 용어 선호 (예: "파악" → "해독"/decode, neural-decoding 매핑). Reviewer #2 톤 유지.
+- 모집 공고 섹션 제목은 질문형 대신 명사형 선호 ("무엇을 함께 하는가" → "함께 하는 연구" 등).
+- PI directive 를 맹종하지 말 것 — multi-reviewer 로 역효과(backfire) 검증 후 반영 (2026-06-09 교훈).
+
+## Learned Workspace Facts
+
+- Live site 는 Vercel 에 배포됨: `snu-connectome-fellows.vercel.app`.
+- 세션 cold-start 인수인계 문서는 `claudedocs/HANDOFF_*.md` 에 위치.
+- PI 확정 일정: 방학 펠로우십 **2026-07-01 ~ 8월**, 정식 9월~ 1년, **1–3명 선발**, 월 100만원 stipend (방학 포함). `configs/settings.yaml` `program_start: 2026-07-01` 과 정합.
+- Notion 폼 URL placeholder `TODO_REPLACE_BEFORE_DEPLOY` 는 두 곳에 존재: `configs/settings.yaml` (L22) + `website/src/components/forms/ApplicationFormSimple.tsx` (L13). 둘 다 함께 갱신.
+- 3 tracks (fMRI / electrophysiology / continuous neural field) 상세는 `docs/RECRUITMENT_3PROJECTS_v1_draft.md`.
+- 제출 서류는 **A·B·C 3개** (에세이 2편 + LLM disclosure honesty). 광고문의 "A–E" 표기는 오류이므로 "A–C" 로 유지.
+- Source-of-truth 우선순위: `CLAUDE.md` Recruitment Logic → `docs/RECRUITMENT_POSTING_v3_draft.md` → `configs/settings.yaml` → `website/src/**` → Notion Publishing.
+
+---
+
+*Last updated: 2026-06-10 (continual-learning: editorial 선호 + PI 확정 일정·placeholder 위치 + 제출 서류 A·B·C 통합)*
